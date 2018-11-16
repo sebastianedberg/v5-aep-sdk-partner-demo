@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!-- 
+OVERVIEW 
+This will cover the best practices and limitations for creating custom message templates and give you the ability to create messages on your own. 
+
+JAVASCRIPT 
+External scripts are not recommended because they will not be available if the device is offline. Scripts should be defined in the document using the appropriate <script> tags and we recommend minifying the source to reduce the total size of the document to save on disk space and download time. 
+
+CSS 
+External style sheets are not recommended because they will not be available if the device is offline. Styles should be defined in the document using the appropriate <style> tags and we recommend minifying the source to reduce the total size of the document to save on disk space and download time. The CSS below is not minified to preserve readability. 
+
+IMAGES 
+Images that are expected to be displayed within the message should be defined in a custom meta tag(name=ADBMessageAssets). This helps ensure a good experience for users that are presented with the message even when offline or with a slow connection. It enables each device to cache the images ahead of time to support a good experience. Serving images through a CDN is recommended. 
+<meta name="ADBMessageAssets" content='[ 
+    [ "http://foo.bar/baz.jpg", "fallback.jpg" ], 
+    [ "http://foo.bar/nofallback.jpg" ] 
+]' /> 
+The original image url should be defined 1st followed by an optional mapping to a local image reference. 
+
+CLICK/TOUCH HANDLING 
+Your custom HTML page may contain one or both of the following types of links: 
+Click-Through 
+adbinapp://confirm/?url=http://www.yoursite.com 
+This will close the message and redirect to the URL parameter (web url or deeplink). 
+Cancel 
+adbinapp://cancel 
+This will close the message. 
+
+AUTO DISMISS 
+This example includes JavaScript to dismiss the message automatically after a preset number of seconds. To enable this feature add an attribute to the <body> element called 'data-auto-dismiss' and set its value to 'true'. The value of the 'data-auto-dismiss-duration' attribute on the <body> element will determine how many seconds to wait before dismissing the message.
+
+PREVIEW WINDOW 
+The preview window within Adobe Campaign is not a device simulator and only meant as a directional preview. It's possible that the preview window will fail to display the message properly, but work as designed on devices. We recommend testing the in app message directly on the targeted devices. 
+-->
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta name=ADBMessageAssets content='[
+    [ "https://wwwimages2.adobe.com/content/dam/acom/en/solutions/campaign/images/54658.en.amc.marquee.campaign-summit.1440x544.jpg", "" ]
+  ]' />
+  <style>
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      width: 100%;
+      height: 100%;
+      font-family: Arial, Helvetica, sans-serif;
+      user-select: none;
+      overflow: hidden;
+      box-sizing: border-box;
+      background-color: transparent;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      align-items: stretch;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .nl-dce-field {
+      white-space: nowrap !important;
+      color: #2886dc !important;
+      text-shadow: none !important;
+      border: 3px solid #c3dbf0 !important;
+      cursor: pointer !important;
+      background-color: #cae4fc !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* Close button */
+    .close-button {
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      box-sizing: border-box;
+      cursor: pointer;
+      border-radius: 12px;
+      font-size: 40px;
+      height: 50px;
+      width: 50px;
+      line-height: 50px;
+      margin: 6px;
+      z-index: 5;
+      color: #000;
+    }
+
+    .visible-true {
+      display: block;
+    }
+
+    .media {
+      display: none;
+      max-height: 50%;
+    }
+
+    .text-and-buttons {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .header {
+      margin: .67em 10px;
+    }
+
+    .message {
+      margin: 0 10px;
+    }
+
+    /* Modal */
+    .modal-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      overflow: hidden;
+    }
+    .modal-container, .text-and-buttons {
+      background-color: #E8EAE9;
+    }
+    @media only screen and (orientation:portrait) {
+      .html-modal.small .modal-container {
+        margin: 20% 8%;
+      }
+    }
+    @media only screen and (orientation:landscape) {
+      .html-modal.small .modal-container {
+        margin: 50px 20%;
+      }
+    }
+    .html-modal.large .modal-container {
+      margin: 5%;
+    }
+
+    /* Theme */
+    .theme-dark .modal-container, .theme-dark .text-and-buttons, .theme-dark .close-button {
+      background-color: #282828;
+      color: #FFF;
+    }
+    .theme-dark .message {
+      color: #c4c4c4;
+    }
+    .theme-dark .buttons {
+      color: #FFF;
+    }
+    .includes-media-image .close-button {
+      background-color: transparent;
+    }
+
+    /* Buttons */
+    .buttons {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .button-margin {
+      width: 100%;
+      margin: 0 44px;
+    }
+    .button {
+      position: relative;
+      display: block;
+      width: 100%;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      min-width: 20px;
+      line-height: 44px;
+      height: 44px;
+      color: rgb(255, 255, 255);
+      background-color: rgb(153, 153, 153);
+      text-align: center;
+      cursor: pointer;
+      overflow: hidden;
+      outline: none;
+      margin: 0px;
+      border-style: solid;
+      border-width: 0px 1px;
+      border-color: rgb(153, 153, 153);
+      border-radius: 6px;
+    }
+    .button.confirm {
+      background-color: rgb(0, 124, 207);
+      border-color: rgb(0, 124, 207);
+      margin-bottom: 18px;
+    }
+    .button:hover, .button:active {
+      background-color: rgb(102, 102, 102);
+      border-color: rgb(102, 102, 102);
+    }
+    .button.confirm:hover, .button.confirm:active {
+      background-color: rgb(2, 104, 160);
+      border-color: rgb(2, 104, 160);
+    }
+    .button:empty {
+      display: none;
+    }
+
+    /* Media */
+    video {
+      display: none;
+    }
+    .includes-media-image .media, .includes-media-video .media {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%;
+    }
+    .includes-media-image.media-only .media, .includes-media-video.media-only .media {
+      max-height: 100%;
+      height: 100%;
+    }
+    .includes-media-image .media {
+      background-size: cover;
+      background-position: center;
+    }
+    .includes-media-video .media {
+      background: none !important;
+    }
+    .includes-media-video video {
+      display: block;
+      max-width: 100%;
+    }
+
+    /* Button Alignment - horizontal overrides */
+    .button-align-horizontal .button-margin {
+      margin: 0 20px;
+    }
+    .button-align-horizontal .buttons {
+      height: 100px;
+    }
+    .button-align-horizontal .button {
+      width: calc(50% - 12px);
+      float: right;
+      margin: 0;
+      height: 60px;
+      line-height: 60px;
+    }
+    .button-align-horizontal .button.confirm {
+      float: left;
+    }
+
+    /* Phones landscape */
+    @media only screen and (max-width:812px) and (orientation:landscape) {
+      .has-media .modal-container {
+        display: block;
+      }
+      .has-media .text-and-buttons {
+        height: 100%;
+      }
+      .includes-media-image.has-media .text-and-buttons, .includes-media-video.has-media .text-and-buttons {
+        position: absolute;
+        left: 40%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+      }
+      .includes-media-image.has-media .media, .includes-media-video.has-media .media {
+        position: absolute;
+        right: 40%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        max-height: 100%;
+        height: 100%;
+      }
+      .includes-media-image.has-media.media-only .media, .includes-media-video.has-media.media-only .media {
+        right: 0;
+      }
+      /* Image only */
+      .includes-media-image.has-media .text-and-buttons {
+        background: -webkit-linear-gradient(left, rgba(237,237,237,0), #ededed 30%, #ededed);
+        background: -ms-linear-gradient(left, rgba(237,237,237,0), #ededed 30%, #ededed);
+        background: linear-gradient(to right, rgba(237,237,237,0), #ededed 30%, #ededed);
+      }
+      .includes-media-image.has-media.theme-dark .text-and-buttons {
+        background: -webkit-linear-gradient(left, rgba(40,40,40,0), #282828 30%, #282828);
+        background: -ms-linear-gradient(left, rgba(40,40,40,0), #282828 30%, #282828);
+        background: linear-gradient(to right, rgba(40,40,40,0), #282828 30%, #282828);
+      }
+      .includes-media-image.has-media .text, .includes-media-image.has-media .buttons {
+        margin-left: 30%;
+      }
+      .includes-media-image.has-media .close-button {
+        left: 10px;
+      }
+      /* Video only */
+      .includes-media-video.has-media .text-and-buttons {
+        left: 50%;
+      }
+      .includes-media-video.has-media .media {
+        right: 50%;
+      }
+      .buttons {
+        height: 140px;
+      }
+      .button-align-horizontal .buttons {
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body class="html-full theme-dark button-align-vertical includes-media-image"
+    data-auto-dismiss="false" data-auto-dismiss-duration="">
+  <div class="modal-container">
+    <a class="close-button visible-true" href="adbinapp://cancel?id={{{broadlogId}}},{{{deliveryId}}},5">&times;</a>
+
+    <div id="media" class="media" style="background-image: url('https://wwwimages2.adobe.com/content/dam/acom/en/solutions/campaign/images/54658.en.amc.marquee.campaign-summit.1440x544.jpg')"
+        data-media-type="image" data-media-url="https://wwwimages2.adobe.com/content/dam/acom/en/solutions/campaign/images/54658.en.amc.marquee.campaign-summit.1440x544.jpg" data-bundled-image-path="">
+      <video
+        controls
+        src="https://wwwimages2.adobe.com/content/dam/acom/en/solutions/campaign/images/54658.en.amc.marquee.campaign-summit.1440x544.jpg"
+        poster=""
+      ></video>
+    </div>
+
+    <div class="text-and-buttons">
+      <div id="text" class="text">
+        <h1 class="header">Adobe Campaign</h1>
+
+        <div class="message">Create, orchestrate, and measure personalized campaigns across every channel.</div>
+      </div>
+
+      <div id="buttons" class="buttons">
+        <div class="button-margin">
+          <a id="button1" class="button confirm" data-destination-url="https://www.adobe.com/ca/marketing-cloud/campaign.html" data-text="Learn More"
+             href="adbinapp://confirm/?id={{{broadlogId}}},{{{deliveryId}}},3">Learn More</a>
+
+          <a id="button2" class="button" data-destination-url="" data-text="No Thanks"
+             href="adbinapp://confirm/?id={{{broadlogId}}},{{{deliveryId}}},4">No Thanks</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function() {
+      // Media
+      var mediaDiv = document.getElementById('media');
+      var hasImageMedia = mediaDiv.dataset.mediaType === 'image';
+      var hasVideoMedia = mediaDiv.dataset.mediaType === 'video';
+      var mediaUrl = mediaDiv.dataset.mediaUrl.trim();
+      var hasMediaUrl = mediaUrl !== '';
+      var bundledImagePath = mediaDiv.dataset.bundledImagePath.trim();
+      var hasBundledImagePath = bundledImagePath !== '';
+
+      // Buttons
+      var button1 = document.getElementById("button1");
+      var button1Text = button1.dataset.text.trim();
+      var hasButton1 = button1Text !== '';
+      var button1DestinationUrl = button1.dataset.destinationUrl.trim();
+      var hasButton1Destination = button1DestinationUrl !== '';
+      var button2 = document.getElementById("button2");
+      var button2Text = button2.dataset.text.trim();
+      var hasButton2 = button2Text !== '';
+      var button2DestinationUrl = button2.dataset.destinationUrl.trim();
+      var hasButton2Destination = button2DestinationUrl !== '';
+
+      // Text
+      var hasHeader = document.querySelector("h1.header").innerText.trim() !== '';
+      var hasMessage = document.querySelector("div.message").innerText.trim() !== '';
+
+      // Auto dismiss
+      var shouldAutoDismiss = document.body.dataset.autoDismiss === 'true';
+      var autoDismissDurationString = document.body.dataset.autoDismissDuration;
+
+      if ((hasImageMedia && hasMediaUrl === false && hasBundledImagePath === false) ||
+          (hasVideoMedia && hasMediaUrl === false)) {
+        // Remove media area if no media has been provided
+        mediaDiv.parentElement.removeChild(mediaDiv);
+      } else {
+        // There is image or video media available
+        document.body.className += ' has-media';
+
+        if (hasImageMedia) {
+          // Remove video element
+          var videoElement = document.querySelector("video");
+          videoElement.parentElement.removeChild(videoElement);
+        }
+      }
+
+      // Handle auto dismiss
+      if (shouldAutoDismiss) {
+        var dismissInSeconds = parseInt(autoDismissDurationString);
+        setTimeout(function() {
+          window.location.href = 'adbinapp://cancel?id={{{broadlogId}}},{{{deliveryId}}},5';
+        }, dismissInSeconds * 1000);
+      }
+
+      var appendToHref = function(linkElement, stringToAppend) {
+        linkElement.setAttribute("href", linkElement.getAttribute("href") + stringToAppend);
+      };
+
+      // Add destinationUrls to buttons
+      if (hasButton1) {
+        if (hasButton1Destination) {
+          appendToHref(button1, "&url=" + button1DestinationUrl);
+        }
+      } else {
+        button1.parentElement.removeChild(button1);
+      }
+
+      if (hasButton2) {
+        if (hasButton2Destination) {
+          appendToHref(button2, "&url=" + button2DestinationUrl);
+        }
+      } else {
+        button2.parentElement.removeChild(button2);
+      }
+
+      if (!hasButton1 && !hasButton2 && !hasHeader && !hasMessage) {
+        var textAndButtons = document.querySelector("div.text-and-buttons");
+        textAndButtons.parentElement.removeChild(textAndButtons);
+        document.body.className += ' media-only';
+      } else {
+        if (!hasHeader && !hasMessage) {
+          var textArea = document.getElementById("text");
+          textArea.parentElement.removeChild(textArea);
+        }
+
+        if (!hasButton1 && !hasButton2) {
+          var buttonArea = document.getElementById("buttons");
+          buttonArea.parentElement.removeChild(buttonArea);
+        }
+      }
+
+    })();
+  </script>
+</body>
+</html>

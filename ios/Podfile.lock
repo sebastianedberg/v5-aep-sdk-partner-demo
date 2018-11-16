@@ -1,0 +1,58 @@
+PODS:
+  - ACPAnalyticsBeta (1.0.2beta):
+    - ACPAnalyticsBeta/iOS (= 1.0.2beta)
+    - ACPCoreBeta (>= 1.0.2beta)
+  - ACPAnalyticsBeta/iOS (1.0.2beta):
+    - ACPCoreBeta (>= 1.0.2beta)
+  - ACPAudienceBeta (1.0.2beta):
+    - ACPAudienceBeta/iOS (= 1.0.2beta)
+    - ACPCoreBeta (>= 1.0.2beta)
+  - ACPAudienceBeta/iOS (1.0.2beta):
+    - ACPCoreBeta (>= 1.0.2beta)
+  - ACPCampaignBeta (1.0.2beta):
+    - ACPCampaignBeta/iOS (= 1.0.2beta)
+    - ACPCoreBeta (>= 1.0.2beta)
+  - ACPCampaignBeta/iOS (1.0.2beta):
+    - ACPCoreBeta (>= 1.0.2beta)
+  - ACPCoreBeta (1.0.2beta):
+    - ACPCoreBeta/iOS (= 1.0.2beta)
+  - ACPCoreBeta/iOS (1.0.2beta)
+  - ACPTargetBeta (1.0.2beta):
+    - ACPCoreBeta (>= 1.0.2beta)
+    - ACPTargetBeta/iOS (= 1.0.2beta)
+  - ACPTargetBeta/iOS (1.0.2beta):
+    - ACPCoreBeta (>= 1.0.2beta)
+  - ACPUserProfileBeta (1.0.1beta):
+    - ACPCoreBeta (>= 1.0.2beta)
+    - ACPUserProfileBeta/iOS (= 1.0.1beta)
+  - ACPUserProfileBeta/iOS (1.0.1beta):
+    - ACPCoreBeta (>= 1.0.2beta)
+
+DEPENDENCIES:
+  - ACPAnalyticsBeta (~> 1.0.2beta)
+  - ACPAudienceBeta (~> 1.0.2beta)
+  - ACPCampaignBeta (~> 1.0.1beta)
+  - ACPCoreBeta (~> 1.0.2beta)
+  - ACPTargetBeta (~> 1.0.2beta)
+  - ACPUserProfileBeta (~> 1.0.1beta)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ACPAnalyticsBeta
+    - ACPAudienceBeta
+    - ACPCampaignBeta
+    - ACPCoreBeta
+    - ACPTargetBeta
+    - ACPUserProfileBeta
+
+SPEC CHECKSUMS:
+  ACPAnalyticsBeta: e90fefd2562efa9d6acb41f68da6f7495d74da37
+  ACPAudienceBeta: 3f33cd7ed76d49554f21153d08f0997f3ee0d7eb
+  ACPCampaignBeta: d27436922151a5f60e5a26048e02c624c2e108ca
+  ACPCoreBeta: e0e7d313a966a8c60e4719e21be26ce61445bbdf
+  ACPTargetBeta: d74cd72506021c1f5b3198b1e96df1f7d4b1618b
+  ACPUserProfileBeta: c7e72178cd1fab68f3e09d157dec79d0ea9f73ab
+
+PODFILE CHECKSUM: 0abb7994d3ad7c4d5cb9ccf0bdc9683220da38fc
+
+COCOAPODS: 1.5.3
