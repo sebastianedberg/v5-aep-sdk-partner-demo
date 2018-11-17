@@ -8,11 +8,11 @@ This project is solely to be seen as a demo app of the v5 capabilities and accel
 
 ## SDK V5
 
-In this demo app you will be using the [Adobe Experience Cloud Platform SDK for iOS](https://aep-sdks.gitbook.io/docs/). The SDK is also available for Android at the moment and more platforms to come like ReactJS Native.
+In this demo app you will be using the [Adobe Experience Cloud Platform SDK for iOS or Android](https://aep-sdks.gitbook.io/docs/). The SDK will support more platforms to come like React Native.
 
 ## Download SDK
 
-The app does already include the latest version through [CocoaPods](https://cocoapods.org/) but if you want to update the SDK feel free to do so. Be aware that updates might effect the code base. Please test it thoroughly.
+The app does already include the latest version through [CocoaPods](https://cocoapods.org/) or [Gradle](https://gradle.org) but if you want to update the SDK feel free to do so. Be aware that updates might effect the code base. Please test it thoroughly.
 
 * [Get the SDK](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk)
 * [Community Forum](https://forums.adobe.com/community/experience-cloud/platform/core-services/mobile-service)
@@ -32,7 +32,7 @@ During Beta:
 
 ## Installation
 
-The very first thing to do is to update the launch config id in  *AppDelegate.swift* e.g. *launch-EN123456789a0a00a12ab345a678a9a012* in the app project. This file id will download your Launch configuration for Analytics, Target, AudienceManager, Visitor ID Service, In-App Messages, Deeplinks, Postbacks. The next steps will help you to get your own config file.
+Have a look at the indiviual [iOS README](/ios/README.md) or [Android README](/android/README.md) for more steps.
 
 ### Setup Analytics
 
@@ -107,6 +107,7 @@ If you want to demo the JSON feed into the app without AEM, just host the *locat
 ## Built With
 
 * [XCode 10.1](https://developer.apple.com/xcode/) - iOS IDE
+* [Android Studio 3.2.1](https://developer.android.com) - Android IDE
 * [Atom](https://atom.io/) - Code IDE
 
 ## Contributing

@@ -1,4 +1,4 @@
-# Partner Mobile Accelerator - v5mobile - AEP SDK
+# Partner Mobile Accelerator - v5mobile - AEP SDK - iOS
 
 This project is based on the the newly released Adobe Experience Cloud Platform SDK for Mobile and has been adapted to be easily integrated in the partner sandbox environment.
 
@@ -116,7 +116,7 @@ Please give me feedback on any section of this app - code, documentation, bugs, 
 
 ## Versioning
 
-Current version is 1.1
+Current version is 1.2
 
 ## Roadmap
 
