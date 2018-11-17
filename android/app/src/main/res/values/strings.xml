@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">v5mobile</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="button_target">Load Target</string>
+    <string name="button_action">Send Action</string>
+    <string name="button_state">Send State</string>
+    <string name="button_login">ECID</string>
+    <string name="state_message">State</string>
+    <string name="action_message">Action</string>
+
+</resources>
