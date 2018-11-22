@@ -1,6 +1,6 @@
 # Partner Mobile Accelerator - v5mobile - AEP SDK - Android
 
-This project is based on the the newly released Adobe Experience Cloud Platform SDK for Mobile and has been adapted to be easily integrated in the partner sandbox environment.
+This project is based on the the newly released Adobe Experience Platform SDK for Mobile and has been adapted to be easily integrated in the partner sandbox environment.
 
 ## Disclaimer
 
@@ -8,7 +8,7 @@ This project is solely to be seen as a demo app of the v5 capabilities and accel
 
 ## SDK V5
 
-In this demo app you will be using the [Adobe Experience Cloud Platform SDK for Android](https://aep-sdks.gitbook.io/docs/)
+In this demo app you will be using the [Adobe Experience Platform SDK for Android](https://aep-sdks.gitbook.io/docs/)
 
 ## Download SDK
 

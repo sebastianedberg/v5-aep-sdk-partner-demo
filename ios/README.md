@@ -1,6 +1,6 @@
 # Partner Mobile Accelerator - v5mobile - AEP SDK - iOS
 
-This project is based on the the newly released Adobe Experience Cloud Platform SDK for Mobile and has been adapted to be easily integrated in the partner sandbox environment.
+This project is based on the the newly released Adobe Experience Platform SDK for Mobile and has been adapted to be easily integrated in the partner sandbox environment.
 
 ## Disclaimer
 
@@ -8,7 +8,7 @@ This project is solely to be seen as a demo app of the v5 capabilities and accel
 
 ## SDK V5
 
-In this demo app you will be using the [Adobe Experience Cloud Platform SDK for iOS](https://aep-sdks.gitbook.io/docs/). The SDK is also available for Android at the moment and more platforms to come like ReactJS Native.
+In this demo app you will be using the [Adobe Experience Platform SDK for iOS](https://aep-sdks.gitbook.io/docs/). The SDK is also available for Android at the moment and more platforms to come like ReactJS Native.
 
 ## Download SDK
 
@@ -27,7 +27,7 @@ During Beta:
 2. [Adobe Launch Integration](https://launch-integration.adobe.com)
 3. [Adobe.IO Integration setup for Launch](https://console.adobe.io/integrations)
 4. TechOps connect ACS instance to Launch with Adobe.io details
-5. TechOps provision MCIAS endpoint (Marketing Cloud In App Service)
+5. TechOps provision MCIAS endpoint (Experience Platform In App Service)
 5. [AEP SDK Campaign Beta 1.0.2](https://cocoapods.org/pods/ACPCampaignBeta)
 
 ## Installation
