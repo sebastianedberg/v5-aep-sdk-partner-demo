@@ -20,15 +20,42 @@ The app does already include the latest version through [CocoaPods](https://coco
 ## Important Links
 * [AEP SDKS](https://github.com/Adobe-Marketing-Cloud/acp-sdks)
 
+Note that by default you should always use the library dependecies that your Launch environment configuration suggests you when clickig on **Install** under **Environments**.
+1. Gradle
+```
+implementation 'com.adobe.marketing.mobile:analytics:1.+'
+implementation 'com.adobe.marketing.mobile:target:1.+'
+implementation 'com.adobe.marketing.mobile:userprofile:1.+'
+implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
+```
+2. iOS
+```
+pod 'ACPAnalytics', '~> 1.0'
+pod 'ACPTarget', '~> 1.0'
+pod 'ACPUserProfile', '~> 1.0'
+pod 'ACPCore', '~> 1.0'
+```
+
 ## Requirements for Push and In-App messages
 
-During Beta:
+If you are part of the beta please look at these requirements:
 1. ACS 18.9 or higher
 2. [Adobe Launch Integration](https://launch-integration.adobe.com)
 3. [Adobe.IO Integration setup for Launch](https://console.adobe.io/integrations)
 4. TechOps connect ACS instance to Launch with Adobe.io details
 5. TechOps provision MCIAS endpoint (Marketing Cloud In App Service)
-5. [AEP SDK Campaign Beta 1.0.2](https://cocoapods.org/pods/ACPCampaignBeta)
+6. [AEP SDK Campaign Beta 1.0.2](https://cocoapods.org/pods/ACPCampaignBeta) only for iOS available. Android in development
+
+The Podfile references the following libraries:
+```
+# Pods for v5mobile
+pod 'ACPAudienceBeta', '~> 1.0.2beta'
+pod 'ACPCampaignBeta', '~> 1.0.2beta'
+pod 'ACPAnalyticsBeta', '~> 1.0.2beta'
+pod 'ACPTargetBeta', '~> 1.0.2beta'
+pod 'ACPUserProfileBeta', '~> 1.0.1beta'
+pod 'ACPCoreBeta', '~> 1.0.2beta'
+```
 
 ## Installation
 
@@ -78,6 +105,12 @@ A major change from SDK 4 to 5 is that there are rules to collect PII in Launch 
 
 ## AEM CaaS
 
+### Requirements
+The AEM package was built on AEM 6.4.0 with sample content. It has no major dependencies in the code but if you run it with **-nosamplecontent** please make sure to look at some component dependencies. I used:
+- core wcm components all 2.0.4
+- core wcm components extension 1.0.0
+- we-retail-all (3.0.0)
+
 ### Configure
 
 1. Install the [AEM CaaS package](/resources/aem-package/com.adobe.partners.v5mobile-1.0.zip) on Author and replicate to Publish
@@ -116,12 +149,11 @@ Please give me feedback on any section of this app - code, documentation, bugs, 
 
 ## Versioning
 
-Current version is 1.1
+Current version is 1.0
 
 ## Roadmap
 
 - Add app to app store
-- Add Android app example
 - Reflect full api coverage in the app
 
 ## Authors
