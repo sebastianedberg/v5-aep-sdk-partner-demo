@@ -141,31 +141,6 @@ strip_invalid_archs() {
   STRIP_BINARY_RETVAL=1
 }
 
-
-if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${PODS_ROOT}/ACPAnalyticsBeta/ACPAnalytics_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPAudienceBeta/ACPAudience_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPCampaignBeta/ACPCampaign_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPCoreBeta/ACPCore_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPCoreBeta/AdobeMarketingMobileCore.framework"
-  install_framework "${PODS_ROOT}/ACPCoreBeta/ACPIdentity_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPCoreBeta/ACPLifecycle_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPCoreBeta/ACPSignal_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPTargetBeta/ACPTarget_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPUserProfileBeta/ACPUserProfile_iOS.framework"
-fi
-if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${PODS_ROOT}/ACPAnalyticsBeta/ACPAnalytics_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPAudienceBeta/ACPAudience_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPCampaignBeta/ACPCampaign_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPCoreBeta/ACPCore_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPCoreBeta/AdobeMarketingMobileCore.framework"
-  install_framework "${PODS_ROOT}/ACPCoreBeta/ACPIdentity_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPCoreBeta/ACPLifecycle_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPCoreBeta/ACPSignal_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPTargetBeta/ACPTarget_iOS.framework"
-  install_framework "${PODS_ROOT}/ACPUserProfileBeta/ACPUserProfile_iOS.framework"
-fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
 fi

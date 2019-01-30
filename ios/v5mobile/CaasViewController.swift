@@ -10,8 +10,8 @@ import Foundation
 import UIKit
 import MapKit
 
-import ACPCore_iOS
-import ACPAnalytics_iOS
+import ACPCore
+import ACPAnalytics
 
 class CaasViewController: ViewController, UITableViewDelegate, UITableViewDataSource {
     

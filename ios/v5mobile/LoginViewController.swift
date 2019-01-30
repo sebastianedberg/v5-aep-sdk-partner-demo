@@ -9,8 +9,7 @@
 import Foundation
 import UIKit
 
-import ACPIdentity_iOS
-import ACPCore_iOS
+import ACPCore
 
 class LoginViewController: ViewController {
     @IBOutlet weak var outputTextView: UITextView!

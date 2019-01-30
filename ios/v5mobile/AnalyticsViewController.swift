@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-import ACPCore_iOS
-import ACPAnalytics_iOS
+import ACPCore
+import ACPAnalytics
 
 class AnalyticsViewController: ViewController {
     @IBOutlet weak var keyTextField: UITextField!

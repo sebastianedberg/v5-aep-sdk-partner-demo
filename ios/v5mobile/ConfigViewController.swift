@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-import ACPCore_iOS
+import ACPCore
 
 class ConfigViewController: ViewController {
     @IBOutlet weak var launchCfg: UITextField!

@@ -8,8 +8,7 @@
 
 import UIKit
 
-import ACPIdentity_iOS
-import ACPCore_iOS
+import ACPCore
 
 class ViewController: UIViewController {
 

@@ -30,10 +30,10 @@ implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
 ```
 2. iOS
 ```
-pod 'ACPAnalytics', '~> 1.0'
-pod 'ACPTarget', '~> 1.0'
-pod 'ACPUserProfile', '~> 1.0'
-pod 'ACPCore', '~> 1.0'
+pod 'ACPAnalytics', '~> 2.0'
+pod 'ACPTarget', '~> 2.0'
+pod 'ACPUserProfile', '~> 2.0'
+pod 'ACPCore', '~> 2.0'
 ```
 
 ## Requirements for Push and In-App messages

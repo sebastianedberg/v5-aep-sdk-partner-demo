@@ -10,15 +10,10 @@ import UIKit
 import AdSupport
 import UserNotifications
 
-import ACPCore_iOS
-//import ACPAudience_iOS
-import ACPCampaign_iOS
-import ACPTarget_iOS
-import ACPAnalytics_iOS
-import ACPUserProfile_iOS
-import ACPIdentity_iOS
-import ACPLifecycle_iOS
-import ACPSignal_iOS
+import ACPCore
+import ACPAnalytics
+import ACPTarget
+import ACPUserProfile
 
 
 @UIApplicationMain
@@ -41,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ACPIdentity.registerExtension();
         ACPUserProfile.registerExtension();
         //ACPAudience.registerExtension()
-        ACPCampaign.registerExtension()
+        //ACPCampaign.registerExtension()
         ACPTarget.registerExtension();
         ACPAnalytics.registerExtension();
         ACPLifecycle.registerExtension();
@@ -90,10 +85,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(launchConfig)
             return launchConfig
         } else {
-            /* max launch integration prod */
-            return "launch-EN96b9d87b38654ea8b6f144b9e0e1bcf0"
-            /* max launch integration dev */
-            //return "launch-EN482097488e0b46e48af778a058f5a718-development"
+            /* max launch prod */
+            return "launch-EN58fdfb72764a4f81b0aaaaa3af9f8e95"
         }
     }
     /**

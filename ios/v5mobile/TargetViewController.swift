@@ -8,9 +8,8 @@
 
 import Foundation
 import UIKit
-import ACPCore_iOS
-import ACPTarget_iOS
-import ACPIdentity_iOS
+import ACPCore
+import ACPTarget
 
 class TargetViewController: ViewController {
     @IBOutlet weak var textView: UITextView!

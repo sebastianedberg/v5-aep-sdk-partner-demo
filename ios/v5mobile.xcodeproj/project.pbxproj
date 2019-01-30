@@ -134,7 +134,6 @@
 				508EFC6321778CD70073BC07 /* Sources */,
 				508EFC6421778CD70073BC07 /* Frameworks */,
 				508EFC6521778CD70073BC07 /* Resources */,
-				B2C6DEE90C8462DFEBDADCFE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,46 +219,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2C6DEE90C8462DFEBDADCFE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-v5mobile/Pods-v5mobile-frameworks.sh",
-				"${PODS_ROOT}/ACPAnalyticsBeta/ACPAnalytics_iOS.framework",
-				"${PODS_ROOT}/ACPAudienceBeta/ACPAudience_iOS.framework",
-				"${PODS_ROOT}/ACPCampaignBeta/ACPCampaign_iOS.framework",
-				"${PODS_ROOT}/ACPCoreBeta/ACPCore_iOS.framework",
-				"${PODS_ROOT}/ACPCoreBeta/AdobeMarketingMobileCore.framework",
-				"${PODS_ROOT}/ACPCoreBeta/ACPIdentity_iOS.framework",
-				"${PODS_ROOT}/ACPCoreBeta/ACPLifecycle_iOS.framework",
-				"${PODS_ROOT}/ACPCoreBeta/ACPSignal_iOS.framework",
-				"${PODS_ROOT}/ACPTargetBeta/ACPTarget_iOS.framework",
-				"${PODS_ROOT}/ACPUserProfileBeta/ACPUserProfile_iOS.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACPAnalytics_iOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACPAudience_iOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACPCampaign_iOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACPCore_iOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdobeMarketingMobileCore.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACPIdentity_iOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACPLifecycle_iOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACPSignal_iOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACPTarget_iOS.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ACPUserProfile_iOS.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-v5mobile/Pods-v5mobile-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

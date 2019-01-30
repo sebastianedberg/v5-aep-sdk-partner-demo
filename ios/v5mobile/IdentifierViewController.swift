@@ -9,8 +9,7 @@
 import Foundation
 import UIKit
 
-import ACPCore_iOS
-//import ACPIdentity_iOS
+import ACPCore
 //import ACPAudience_iOS
 
 
