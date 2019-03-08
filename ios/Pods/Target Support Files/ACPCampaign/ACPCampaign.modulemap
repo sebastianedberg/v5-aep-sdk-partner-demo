@@ -1,0 +1,6 @@
+framework module ACPCampaign {
+  umbrella header "ACPCampaign-umbrella.h"
+
+  export *
+  module * { export * }
+}

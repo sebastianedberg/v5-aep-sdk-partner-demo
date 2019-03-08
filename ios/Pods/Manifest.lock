@@ -4,6 +4,11 @@ PODS:
     - ACPCore (~> 2.0)
   - ACPAnalytics/iOS (2.0.1):
     - ACPCore (~> 2.0)
+  - ACPCampaign (1.0.0):
+    - ACPCampaign/iOS (= 1.0.0)
+    - ACPCore (~> 2.0)
+  - ACPCampaign/iOS (1.0.0):
+    - ACPCore (~> 2.0)
   - ACPCore (2.0.1):
     - ACPCore/iOS (= 2.0.1)
   - ACPCore/iOS (2.0.1)
@@ -20,6 +25,7 @@ PODS:
 
 DEPENDENCIES:
   - ACPAnalytics (~> 2.0)
+  - ACPCampaign (~> 1.0)
   - ACPCore (~> 2.0)
   - ACPTarget (~> 2.0)
   - ACPUserProfile (~> 2.0)
@@ -27,16 +33,18 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ACPAnalytics
+    - ACPCampaign
     - ACPCore
     - ACPTarget
     - ACPUserProfile
 
 SPEC CHECKSUMS:
   ACPAnalytics: b570cf7c7c91c66b94b9adaaabc4b58a64c6da5d
+  ACPCampaign: 2f12394d79609ddc530effb538458fdaaf822223
   ACPCore: 18f65b91b8752778799310527f46cf23c0d6facf
   ACPTarget: d55590eeeafb66bcbbdd66b24749d23b60b09e9a
   ACPUserProfile: d5141c8f5154e10e3a08124649ddaae13efd5131
 
-PODFILE CHECKSUM: 2f849dc7edb7ac55765b86be32c60d0b4abfda9f
+PODFILE CHECKSUM: 9a5e9b6cf7a90a027f6423f8192a50f2b70f61b8
 
 COCOAPODS: 1.5.3

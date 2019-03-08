@@ -6,8 +6,8 @@ target 'v5mobile' do
   use_frameworks!
 
   # Pods for v5mobile
-    #pod 'ACPAudienceBeta', '~> 1.0.2beta'
-    #pod 'ACPCampaignBeta', '~> 1.0.2beta'
+    use_frameworks!
+    pod 'ACPCampaign', '~> 1.0'
     pod 'ACPAnalytics', '~> 2.0'
     pod 'ACPTarget', '~> 2.0'
     pod 'ACPUserProfile', '~> 2.0'

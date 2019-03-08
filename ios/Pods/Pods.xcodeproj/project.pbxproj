@@ -7,53 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0F7A62F6A0DAF6249199281C26DCF71B /* ACPExtensionListener.h in Headers */ = {isa = PBXBuildFile; fileRef = 673F057245E228FADED6BF236B389619 /* ACPExtensionListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19238D45C83E60AFB4146C65D30B1A90 /* ACPIdentity.h in Headers */ = {isa = PBXBuildFile; fileRef = 16FA8FE9AEDF73BDA18E30154296CF24 /* ACPIdentity.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23772955CC6F8B813982D9836D4E239A /* ACPExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F6058E81A60D23C7C4C14A622C79C2 /* ACPExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32877C97212D3EAC2E55410901752C1B /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A5668CC23884AD8A0FF9BEC456719 /* Empty.m */; };
-		32F7627326B5849BDAE7BB4F944912FA /* ACPAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D8914A2B14FB30A55F2CA1D7C31FEE01 /* ACPAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		071B90A8E0EBBB1C2157ACEB99CE1B38 /* Pods-v5mobile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A63C284F6B38F640F2D54A5336B398 /* Pods-v5mobile-dummy.m */; };
+		0F7A62F6A0DAF6249199281C26DCF71B /* ACPExtensionListener.h in Headers */ = {isa = PBXBuildFile; fileRef = D852763BE580DFF7DFA5A50B84CF311D /* ACPExtensionListener.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19238D45C83E60AFB4146C65D30B1A90 /* ACPIdentity.h in Headers */ = {isa = PBXBuildFile; fileRef = 558088354103EE90FF5C9AF6DB82B3F5 /* ACPIdentity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19340F5DEA9EE39DE902D9343A804229 /* ACPCampaign.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E7B68597DAEC1064C004DA01CB8828B /* ACPCampaign.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EC41C7F628C24B8003C8D9DCBC7078A /* ACPCampaign-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 73513D837A105715721946C07AA37DFE /* ACPCampaign-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23772955CC6F8B813982D9836D4E239A /* ACPExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 53DACDAF2ABB752302737F24B6D3AB16 /* ACPExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32877C97212D3EAC2E55410901752C1B /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AD9F5DFF563376951F7D1F3A20339C /* Empty.m */; };
+		32F7627326B5849BDAE7BB4F944912FA /* ACPAnalytics-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 010D7809A5348B51BF6803F45CDD9B7B /* ACPAnalytics-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		343C628A6481728431654CA797797665 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD011073A06F55D46CABE8D45FE650A0 /* Foundation.framework */; };
 		3BF7BDE29F92B332E446677E6A277D12 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B3269F16E6A308704931E4F805C260 /* UIKit.framework */; };
-		40A13EFA44D2161A8A83CC399B22FCF2 /* ACPUserProfile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 11135EA09AB782F7A2D302BC5CB2B0C2 /* ACPUserProfile-dummy.m */; };
-		423D7EC3D59902E710854DBDC36ED1F7 /* ACPLifecycle.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E8434CFDEE199DFA8352141D38BCAC5 /* ACPLifecycle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4464CFCE3E965E67309035424B2EFAD5 /* ACPCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F03891EDF6D73E735D68CC35EF84CC /* ACPCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40A13EFA44D2161A8A83CC399B22FCF2 /* ACPUserProfile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 034E8F6E37912A2327C8A7996AAD552A /* ACPUserProfile-dummy.m */; };
+		423D7EC3D59902E710854DBDC36ED1F7 /* ACPLifecycle.h in Headers */ = {isa = PBXBuildFile; fileRef = 48D9986ED982DDAFB267775972D9DBCE /* ACPLifecycle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4464CFCE3E965E67309035424B2EFAD5 /* ACPCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 902FA2BBD07123002DEF10DDE522E18D /* ACPCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		48FF805CE3E171EC79E8DD27604A8B38 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29D82E2D87227993112140A45D8A9D2 /* SystemConfiguration.framework */; };
-		58DF96BCF140B26C270DA08847127F02 /* ACPUserProfile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F564B6170F8772EC3C4CD50209F6D1AA /* ACPUserProfile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A0A00916D638FF7F336D82061681D11 /* ACPTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = 260A9995D44E76E223CFC44483772655 /* ACPTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5CC8DCC037B576DCBB68673EB47052AF /* ACPTarget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8452C5000D9EB335439D2ED2DF4A5763 /* ACPTarget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FB88A116179368E33F7F957C1B4FF4E /* empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 716E09C1CA4C3860B75F765B954640BE /* empty.m */; };
-		7A2A029976AB68FB0E81613A282BDDFF /* ACPAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 740D246F40C98794CB460F20355E69BC /* ACPAnalytics-dummy.m */; };
-		80B0B77C30914547F29A1058F1D560F4 /* ACPSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = F07985BBC538D490F51F0587C672A703 /* ACPSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		82153EFF124424233E09A8C3D430F598 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 379DDB376F105A01CB98A6BF29901A26 /* Empty.m */; };
-		876F19344FABD971746AD5D6C2C4B72E /* ACPExtensionError.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B0F493EB21196856F27654BB7E25644 /* ACPExtensionError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		87DE3329D079C62B0890AAA94F902FD3 /* ACPCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E80878CB5B5661B7FA33D5F574844AC3 /* ACPCore-dummy.m */; };
-		9087C84B5F629B20CC7D368D7DAA80B3 /* ACPUserProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = F40D48BD65A8E645BF23D47F1E11C566 /* ACPUserProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D5022A6725C1F70AEC8E7D2BDC6FCC2 /* Pods-v5mobile-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A63C284F6B38F640F2D54A5336B398 /* Pods-v5mobile-dummy.m */; };
-		A0D7D5E0FD2B32E5051A6964471F4900 /* ACPMobileVisitorId.h in Headers */ = {isa = PBXBuildFile; fileRef = A00BBE06C27DC8D468CD51CABEA46AB9 /* ACPMobileVisitorId.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58DF96BCF140B26C270DA08847127F02 /* ACPUserProfile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 57153CA69F999C1207E6C17D87FEA84A /* ACPUserProfile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A0A00916D638FF7F336D82061681D11 /* ACPTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = F8CDA3C8733CA9C6D5CE7C4CF14283A2 /* ACPTarget.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CC8DCC037B576DCBB68673EB47052AF /* ACPTarget-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6F0C91CC59C9DDA935D83717DECE383 /* ACPTarget-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FB88A116179368E33F7F957C1B4FF4E /* empty.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3646FDBC9767BDEA64C026E3C70F28 /* empty.m */; };
+		6B7F17D20B4B10236FFC9F086407830D /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = B8FF0F78A880BC64F375760C4610524D /* Empty.m */; };
+		707C9E14923EAC7B1E33CBDD5707C99D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD011073A06F55D46CABE8D45FE650A0 /* Foundation.framework */; };
+		7A2A029976AB68FB0E81613A282BDDFF /* ACPAnalytics-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AE2FD898D392CDEA22C1373E7F46462 /* ACPAnalytics-dummy.m */; };
+		80B0B77C30914547F29A1058F1D560F4 /* ACPSignal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ED3F2F9C4D0997DF96CCC0F8F983558 /* ACPSignal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82153EFF124424233E09A8C3D430F598 /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 84850A039FA7975E49C84EF1B4D98CC9 /* Empty.m */; };
+		876F19344FABD971746AD5D6C2C4B72E /* ACPExtensionError.h in Headers */ = {isa = PBXBuildFile; fileRef = C65B554EE64FB597CC13DC195ADE426B /* ACPExtensionError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87DE3329D079C62B0890AAA94F902FD3 /* ACPCore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C0E4DA8A5AEE341D5A01BC1F3076C6E2 /* ACPCore-dummy.m */; };
+		889FABFD5A05D0F70775D221534A25F2 /* Pods-v5mobile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E1BFC3133E81FB8ADC324BEC4DBB9B /* Pods-v5mobile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9087C84B5F629B20CC7D368D7DAA80B3 /* ACPUserProfile.h in Headers */ = {isa = PBXBuildFile; fileRef = EF95B6B086F914DFD0BCC9484BE77780 /* ACPUserProfile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0D7D5E0FD2B32E5051A6964471F4900 /* ACPMobileVisitorId.h in Headers */ = {isa = PBXBuildFile; fileRef = 88A5D871E0C4FCC003E64F0FEAD126B5 /* ACPMobileVisitorId.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AC6E9DDAB5BBB804F4FF14471B24B946 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD011073A06F55D46CABE8D45FE650A0 /* Foundation.framework */; };
 		AE6D0D33750609BFB0E0BBAFA6A81099 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD011073A06F55D46CABE8D45FE650A0 /* Foundation.framework */; };
-		B3D9C3BF6AFD30787C41CD6809461E51 /* ACPTargetRequestObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D34D33860B2CFD01711FB25F666D00F /* ACPTargetRequestObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3D9C3BF6AFD30787C41CD6809461E51 /* ACPTargetRequestObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D91823EF0493E04BBFB4E39B352B488 /* ACPTargetRequestObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B40F798A632EE97EE9842495E3933142 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B442D7979B8BDD99D4492FA4C61152F9 /* UserNotifications.framework */; };
-		B4FD834468046737116E9B83022C1F6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD011073A06F55D46CABE8D45FE650A0 /* Foundation.framework */; };
-		B64CFC3C40517F2B7B4AD01375BB33AF /* ACPTarget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B068BE0E61DCFC66BDE3E3AD7ABC151 /* ACPTarget-dummy.m */; };
-		C15ECF475C1A5FE8C5BEA1F7BFDFAC5C /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 995CB1C685037A1350CE73C4BCC5C905 /* Empty.m */; };
-		CFCD2610EFAD7BAA2036A7E0C26DB6EC /* ACPCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA72CE06C555C8D3AC6DE20D1CD65259 /* ACPCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D082FC19E5D6712C72681175DE9C7084 /* ACPAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = 0240B0BD83CD91D9E6A64004667D2D75 /* ACPAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D67CD2FBDB8EB8D465A3D083B8A6A0B6 /* ACPExtensionApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 853A03F543795A3D6211612F78570D1B /* ACPExtensionApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E48230BE3CCDB054C9E5D4D5A6D3C095 /* ACPExtensionEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = B93D6936BBD96856510D9A7E90BDBDDD /* ACPExtensionEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA121494AFFA8CBA26C2423DCE6E1813 /* Pods-v5mobile-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E1BFC3133E81FB8ADC324BEC4DBB9B /* Pods-v5mobile-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE7D2A0899E2595DF11AEEDE9F81646B /* ACPTargetPrefetchObject.h in Headers */ = {isa = PBXBuildFile; fileRef = FE58C5C2E79DA184272C3CE0D4D721D2 /* ACPTargetPrefetchObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B64CFC3C40517F2B7B4AD01375BB33AF /* ACPTarget-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2833A680EBD754DE48E9DA1AF099C3C9 /* ACPTarget-dummy.m */; };
+		B92F0C5D03C8F4EC31E426B24BE85F71 /* ACPCampaign-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FB94EE0F2969268DF2804144DFBF2F20 /* ACPCampaign-dummy.m */; };
+		C15ECF475C1A5FE8C5BEA1F7BFDFAC5C /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BF0C033F607449093C51B595091881 /* Empty.m */; };
+		C585DEF3C4AA069B9C22F18A687343E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD011073A06F55D46CABE8D45FE650A0 /* Foundation.framework */; };
+		CFCD2610EFAD7BAA2036A7E0C26DB6EC /* ACPCore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E250F83B0D66B7994A9549AD99DA8D30 /* ACPCore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D082FC19E5D6712C72681175DE9C7084 /* ACPAnalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = F732660F936072D520BDC66483DD329E /* ACPAnalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D67CD2FBDB8EB8D465A3D083B8A6A0B6 /* ACPExtensionApi.h in Headers */ = {isa = PBXBuildFile; fileRef = CB8A7AAE93C621C536AF846F84F4FB3B /* ACPExtensionApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E48230BE3CCDB054C9E5D4D5A6D3C095 /* ACPExtensionEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 923B26D6A0D88241CFA535B0D743E0EE /* ACPExtensionEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE7D2A0899E2595DF11AEEDE9F81646B /* ACPTargetPrefetchObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FA187E914B60632494C5EA848C34084 /* ACPTargetPrefetchObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE9DE455E60193AE8715C501C8F19E2B /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B33432C2A4E740D66384C114D1E4A9 /* WebKit.framework */; };
 		FCA593B4CB324ADE57D19B1B5DA72242 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD011073A06F55D46CABE8D45FE650A0 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B6FBDBA1ABE1BD6C1CF035227F16FB2 /* PBXContainerItemProxy */ = {
+		00D302FBF68E44DCAE1897B31FE32420 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 32DAFBCECFA5E67D4895478FDD41F6EC;
 			remoteInfo = ACPAnalytics;
+		};
+		2E2347CC6319F469A4A1CDDF666DD011 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11A4F6C5024418FBA0AD30F046932218;
+			remoteInfo = ACPCore;
 		};
 		3BD07A716154645160A6C3283ADB94FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -69,26 +81,26 @@
 			remoteGlobalIDString = 11A4F6C5024418FBA0AD30F046932218;
 			remoteInfo = ACPCore;
 		};
-		508E77E3986798D414752C78B9BD14E6 /* PBXContainerItemProxy */ = {
+		65C69DDB5F52990CF0DC30CCD359CA0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7FE17BC2639EC3874DF9CB5B6CB1EBE6;
-			remoteInfo = ACPTarget;
+			remoteGlobalIDString = AB932F6C8C0D133F251240C1A41A1AB4;
+			remoteInfo = ACPUserProfile;
 		};
-		643F58794B8093BA506A524D96BE2345 /* PBXContainerItemProxy */ = {
+		76CBF532113230A9543AB52F44FDEB2A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 11A4F6C5024418FBA0AD30F046932218;
 			remoteInfo = ACPCore;
 		};
-		72D62384A7FEB26186547FA870E46856 /* PBXContainerItemProxy */ = {
+		7A00E7E935CAD3A8C91BDA82E1125755 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AB932F6C8C0D133F251240C1A41A1AB4;
-			remoteInfo = ACPUserProfile;
+			remoteGlobalIDString = D81EE35B0834DF07E584364D393AC231;
+			remoteInfo = ACPCampaign;
 		};
 		B6856679A7B3DDED34EEC5C6375480A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -97,76 +109,92 @@
 			remoteGlobalIDString = 11A4F6C5024418FBA0AD30F046932218;
 			remoteInfo = ACPCore;
 		};
+		DCA9E9C7008D4F19F19B90163A1007C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7FE17BC2639EC3874DF9CB5B6CB1EBE6;
+			remoteInfo = ACPTarget;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00F03891EDF6D73E735D68CC35EF84CC /* ACPCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPCore.h; path = include/ACPCore.h; sourceTree = "<group>"; };
-		0240B0BD83CD91D9E6A64004667D2D75 /* ACPAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPAnalytics.h; path = include/ACPAnalytics.h; sourceTree = "<group>"; };
-		0A4A5668CC23884AD8A0FF9BEC456719 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
-		0B068BE0E61DCFC66BDE3E3AD7ABC151 /* ACPTarget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPTarget-dummy.m"; sourceTree = "<group>"; };
-		0BC68AE9940A6931B9842505283DDE90 /* ACPAnalytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPAnalytics-prefix.pch"; sourceTree = "<group>"; };
+		010D7809A5348B51BF6803F45CDD9B7B /* ACPAnalytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPAnalytics-umbrella.h"; sourceTree = "<group>"; };
+		034E8F6E37912A2327C8A7996AAD552A /* ACPUserProfile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPUserProfile-dummy.m"; sourceTree = "<group>"; };
+		08F15B3CD9EBA6AAC16044B4073D1F63 /* ACPUserProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPUserProfile.framework; path = ACPUserProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CF647C6463FC0610CC3B932FC7A9D1C /* Pods-v5mobile-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-v5mobile-resources.sh"; sourceTree = "<group>"; };
-		0D372D56ECF5EB99FB13269A129884A1 /* ACPUserProfile-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPUserProfile-prefix.pch"; sourceTree = "<group>"; };
-		0D6D70340A10DF957804B9978BA652BE /* libACPSignal_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPSignal_iOS.a; sourceTree = "<group>"; };
-		11135EA09AB782F7A2D302BC5CB2B0C2 /* ACPUserProfile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPUserProfile-dummy.m"; sourceTree = "<group>"; };
-		1521AC9CEBAC81F923467136C2629944 /* libACPCore_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPCore_iOS.a; sourceTree = "<group>"; };
-		16FA8FE9AEDF73BDA18E30154296CF24 /* ACPIdentity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPIdentity.h; path = include/ACPIdentity.h; sourceTree = "<group>"; };
+		0D8390126CADB78F28744777AE5D67CE /* ACPCampaign.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPCampaign.modulemap; sourceTree = "<group>"; };
+		122B728131B49B986727F80DCB23E74D /* ACPAnalytics-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPAnalytics-prefix.pch"; sourceTree = "<group>"; };
+		12BF0C033F607449093C51B595091881 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
 		17B3269F16E6A308704931E4F805C260 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		260A9995D44E76E223CFC44483772655 /* ACPTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTarget.h; path = include/ACPTarget.h; sourceTree = "<group>"; };
-		27675D6DADCB5795848BDAEAD5A25E0B /* libACPTarget_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPTarget_iOS.a; sourceTree = "<group>"; };
-		2BC73ACECF4C94294EA3D5203D5EE894 /* ACPTarget-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPTarget-prefix.pch"; sourceTree = "<group>"; };
+		19CBDF7B79E71658D087591CE6270351 /* ACPCampaign.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPCampaign.xcconfig; sourceTree = "<group>"; };
+		1C4018D5D9AAED84885BE0F73F81B118 /* ACPCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPCore-prefix.pch"; sourceTree = "<group>"; };
+		1D91823EF0493E04BBFB4E39B352B488 /* ACPTargetRequestObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTargetRequestObject.h; path = include/ACPTargetRequestObject.h; sourceTree = "<group>"; };
+		1FA187E914B60632494C5EA848C34084 /* ACPTargetPrefetchObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTargetPrefetchObject.h; path = include/ACPTargetPrefetchObject.h; sourceTree = "<group>"; };
+		25DA57E7440BC66476E2FFA6F4537117 /* ACPAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPAnalytics.framework; path = ACPAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2833A680EBD754DE48E9DA1AF099C3C9 /* ACPTarget-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPTarget-dummy.m"; sourceTree = "<group>"; };
+		28EE6A1D870763296E7533B1F19C2522 /* ACPCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPCore.framework; path = ACPCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1293A58EE3E3230F2BC8EAA824562E /* libACPIdentity_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPIdentity_iOS.a; sourceTree = "<group>"; };
 		319C75F55F5D70D6212CB0EEE2C14858 /* Pods-v5mobile-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-v5mobile-frameworks.sh"; sourceTree = "<group>"; };
-		34F6058E81A60D23C7C4C14A622C79C2 /* ACPExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtension.h; path = include/ACPExtension.h; sourceTree = "<group>"; };
-		379DDB376F105A01CB98A6BF29901A26 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
-		3B0F493EB21196856F27654BB7E25644 /* ACPExtensionError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionError.h; path = include/ACPExtensionError.h; sourceTree = "<group>"; };
-		3BF0D6ED4DCB8BCF36EAB4F135AD4BB4 /* ACPUserProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPUserProfile.xcconfig; sourceTree = "<group>"; };
-		40F791D45CE1EBCD88B998F5515687D6 /* ACPCore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPCore-prefix.pch"; sourceTree = "<group>"; };
+		3D04238F31238F2959CBE1921178E7CD /* libACPCampaign_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPCampaign_iOS.a; sourceTree = "<group>"; };
 		44A63C284F6B38F640F2D54A5336B398 /* Pods-v5mobile-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-v5mobile-dummy.m"; sourceTree = "<group>"; };
+		480F7B94E32B0B8633726021268CFFD4 /* libACPCore_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPCore_iOS.a; sourceTree = "<group>"; };
+		48D9986ED982DDAFB267775972D9DBCE /* ACPLifecycle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPLifecycle.h; path = include/ACPLifecycle.h; sourceTree = "<group>"; };
+		49527643739E376D435E4C065E01A018 /* ACPUserProfile-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPUserProfile-prefix.pch"; sourceTree = "<group>"; };
+		4B5F358468B2373DF50DD721F9874C80 /* ACPTarget.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPTarget.xcconfig; sourceTree = "<group>"; };
 		508517EE2D43A64B95AD7A1F0A3A3559 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51C8B5D6AC04728C5DE8AC47A63C7DC9 /* ACPTarget-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPTarget-prefix.pch"; sourceTree = "<group>"; };
+		53DACDAF2ABB752302737F24B6D3AB16 /* ACPExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtension.h; path = include/ACPExtension.h; sourceTree = "<group>"; };
+		558088354103EE90FF5C9AF6DB82B3F5 /* ACPIdentity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPIdentity.h; path = include/ACPIdentity.h; sourceTree = "<group>"; };
+		56267AEFC6DAE70DF73B60F75212FA76 /* libACPUserProfile_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPUserProfile_iOS.a; sourceTree = "<group>"; };
+		57153CA69F999C1207E6C17D87FEA84A /* ACPUserProfile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPUserProfile-umbrella.h"; sourceTree = "<group>"; };
 		571C9FBDA99179D4BCA3536FB4BC204A /* Pods-v5mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-v5mobile.release.xcconfig"; sourceTree = "<group>"; };
-		6531E0A9F02B86B202C0BC2EA2BA6C64 /* ACPTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPTarget.framework; path = ACPTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		673F057245E228FADED6BF236B389619 /* ACPExtensionListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionListener.h; path = include/ACPExtensionListener.h; sourceTree = "<group>"; };
-		6D34D33860B2CFD01711FB25F666D00F /* ACPTargetRequestObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTargetRequestObject.h; path = include/ACPTargetRequestObject.h; sourceTree = "<group>"; };
-		7019BAC4FD6C1A4AD7381DDE204E89CC /* ACPAnalytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPAnalytics.framework; path = ACPAnalytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		716E09C1CA4C3860B75F765B954640BE /* empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = empty.m; path = include/empty.m; sourceTree = "<group>"; };
-		740D246F40C98794CB460F20355E69BC /* ACPAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPAnalytics-dummy.m"; sourceTree = "<group>"; };
-		741C3E979D1179801A73B861CEB1E8B4 /* ACPCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPCore.xcconfig; sourceTree = "<group>"; };
-		74D2FBC46DB304AECFF4AE438371E188 /* libACPUserProfile_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPUserProfile_iOS.a; sourceTree = "<group>"; };
+		596A23318EB53494AE91B3460E2931B6 /* libACPAnalytics_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPAnalytics_iOS.a; sourceTree = "<group>"; };
+		5E859D741C73033CA0D132DD8423B1E6 /* ACPCampaign.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPCampaign.framework; path = ACPCampaign.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E7B68597DAEC1064C004DA01CB8828B /* ACPCampaign.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPCampaign.h; path = include/ACPCampaign.h; sourceTree = "<group>"; };
+		6E825E26731153CB6FC314E26AB69685 /* Pods_v5mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_v5mobile.framework; path = "Pods-v5mobile.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		73513D837A105715721946C07AA37DFE /* ACPCampaign-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPCampaign-umbrella.h"; sourceTree = "<group>"; };
 		76E1BFC3133E81FB8ADC324BEC4DBB9B /* Pods-v5mobile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-v5mobile-umbrella.h"; sourceTree = "<group>"; };
-		8452C5000D9EB335439D2ED2DF4A5763 /* ACPTarget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPTarget-umbrella.h"; sourceTree = "<group>"; };
+		7B545BCDAA0DDCC040634BFC1CCC12DC /* ACPCampaign-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPCampaign-prefix.pch"; sourceTree = "<group>"; };
+		84850A039FA7975E49C84EF1B4D98CC9 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
 		84B33432C2A4E740D66384C114D1E4A9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
-		853A03F543795A3D6211612F78570D1B /* ACPExtensionApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionApi.h; path = include/ACPExtensionApi.h; sourceTree = "<group>"; };
 		876CCD7D47835575EDB075BD705B3739 /* Pods-v5mobile-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-v5mobile-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8DFE9894708B7BA4806BDEB9728FF4D8 /* libACPAnalytics_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPAnalytics_iOS.a; sourceTree = "<group>"; };
-		8E8434CFDEE199DFA8352141D38BCAC5 /* ACPLifecycle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPLifecycle.h; path = include/ACPLifecycle.h; sourceTree = "<group>"; };
+		88A5D871E0C4FCC003E64F0FEAD126B5 /* ACPMobileVisitorId.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPMobileVisitorId.h; path = include/ACPMobileVisitorId.h; sourceTree = "<group>"; };
+		8AE2FD898D392CDEA22C1373E7F46462 /* ACPAnalytics-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPAnalytics-dummy.m"; sourceTree = "<group>"; };
+		8DA597A4AB61438F00C01E712E727DB8 /* ACPAnalytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPAnalytics.xcconfig; sourceTree = "<group>"; };
+		8DC32602F055B48BB5BACB0553C0AB8F /* ACPCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPCore.modulemap; sourceTree = "<group>"; };
+		902FA2BBD07123002DEF10DDE522E18D /* ACPCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPCore.h; path = include/ACPCore.h; sourceTree = "<group>"; };
+		923B26D6A0D88241CFA535B0D743E0EE /* ACPExtensionEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionEvent.h; path = include/ACPExtensionEvent.h; sourceTree = "<group>"; };
 		92BC2A88200F0A0429D5551C4669197C /* Pods-v5mobile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-v5mobile.modulemap"; sourceTree = "<group>"; };
 		93232124B56C49BA692810E5F0CB3E20 /* Pods-v5mobile-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-v5mobile-acknowledgements.plist"; sourceTree = "<group>"; };
+		938C01AE81882E551FD9AA2793D0865C /* ACPCore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPCore.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		995CB1C685037A1350CE73C4BCC5C905 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
-		A00BBE06C27DC8D468CD51CABEA46AB9 /* ACPMobileVisitorId.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPMobileVisitorId.h; path = include/ACPMobileVisitorId.h; sourceTree = "<group>"; };
+		9BCC7D5F301A6D5CF96652C13887EA2F /* ACPUserProfile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPUserProfile.modulemap; sourceTree = "<group>"; };
+		9ED3F2F9C4D0997DF96CCC0F8F983558 /* ACPSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPSignal.h; path = include/ACPSignal.h; sourceTree = "<group>"; };
+		A1FC6D6E52BCAE89BCE0D27C9C7B6C2A /* ACPUserProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPUserProfile.xcconfig; sourceTree = "<group>"; };
 		A29D82E2D87227993112140A45D8A9D2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		A6782733F3FD2DB022C2B5C2313A02F2 /* ACPUserProfile.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPUserProfile.modulemap; sourceTree = "<group>"; };
-		A8B65196A5B1AB875E3A422E168001E8 /* Pods_v5mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_v5mobile.framework; path = "Pods-v5mobile.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B193FACA8003E46BF5EC9EBAA6A03A93 /* ACPCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPCore.modulemap; sourceTree = "<group>"; };
 		B207E906F2A070AAFE667DAC3B758B2E /* Pods-v5mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-v5mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		B442D7979B8BDD99D4492FA4C61152F9 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
-		B93D6936BBD96856510D9A7E90BDBDDD /* ACPExtensionEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionEvent.h; path = include/ACPExtensionEvent.h; sourceTree = "<group>"; };
-		BDF0298E5590642D08B70A7A33953E4E /* ACPTarget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPTarget.modulemap; sourceTree = "<group>"; };
-		C8B8C3D808ACE7386F5554787233088A /* ACPAnalytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPAnalytics.modulemap; sourceTree = "<group>"; };
-		CA6121776AFD53AF3BD7560F57D149ED /* ACPCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPCore.framework; path = ACPCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA72CE06C555C8D3AC6DE20D1CD65259 /* ACPCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPCore-umbrella.h"; sourceTree = "<group>"; };
-		CE344F1FCA35EE1626F9A3059E90265E /* ACPUserProfile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPUserProfile.framework; path = ACPUserProfile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D8914A2B14FB30A55F2CA1D7C31FEE01 /* ACPAnalytics-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPAnalytics-umbrella.h"; sourceTree = "<group>"; };
+		B8FF0F78A880BC64F375760C4610524D /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
+		BA9804448699F43DCE7C8F8FE12D23E5 /* ACPAnalytics.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPAnalytics.modulemap; sourceTree = "<group>"; };
+		C0E4DA8A5AEE341D5A01BC1F3076C6E2 /* ACPCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPCore-dummy.m"; sourceTree = "<group>"; };
+		C65B554EE64FB597CC13DC195ADE426B /* ACPExtensionError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionError.h; path = include/ACPExtensionError.h; sourceTree = "<group>"; };
+		C7D45886B1C31C56D1ED66B3BE567DFD /* libACPSignal_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPSignal_iOS.a; sourceTree = "<group>"; };
+		CB8A7AAE93C621C536AF846F84F4FB3B /* ACPExtensionApi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionApi.h; path = include/ACPExtensionApi.h; sourceTree = "<group>"; };
+		CBE03C3CA83DA6C521E86B1613190776 /* ACPTarget.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ACPTarget.modulemap; sourceTree = "<group>"; };
+		D5673EFF24A1C0263CED95992B855A90 /* libACPTarget_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPTarget_iOS.a; sourceTree = "<group>"; };
+		D6F0C91CC59C9DDA935D83717DECE383 /* ACPTarget-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPTarget-umbrella.h"; sourceTree = "<group>"; };
+		D852763BE580DFF7DFA5A50B84CF311D /* ACPExtensionListener.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPExtensionListener.h; path = include/ACPExtensionListener.h; sourceTree = "<group>"; };
+		D87FD8F30A8A729DDB0A231E36916BFE /* ACPTarget.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ACPTarget.framework; path = ACPTarget.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD011073A06F55D46CABE8D45FE650A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DE18CACC4ED4744BFDADC9DA0D9108F3 /* ACPTarget.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPTarget.xcconfig; sourceTree = "<group>"; };
-		E67E434668BE0C85EAD97C26B8146D87 /* ACPAnalytics.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ACPAnalytics.xcconfig; sourceTree = "<group>"; };
-		E80878CB5B5661B7FA33D5F574844AC3 /* ACPCore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPCore-dummy.m"; sourceTree = "<group>"; };
-		E8F6C8A1A80A1466F6352E86B9841FE0 /* libACPLifecycle_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPLifecycle_iOS.a; sourceTree = "<group>"; };
-		F07985BBC538D490F51F0587C672A703 /* ACPSignal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPSignal.h; path = include/ACPSignal.h; sourceTree = "<group>"; };
-		F40D48BD65A8E645BF23D47F1E11C566 /* ACPUserProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPUserProfile.h; path = include/ACPUserProfile.h; sourceTree = "<group>"; };
-		F564B6170F8772EC3C4CD50209F6D1AA /* ACPUserProfile-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPUserProfile-umbrella.h"; sourceTree = "<group>"; };
-		FD19EDEEE2DD7881326168EF5663B17B /* libACPIdentity_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPIdentity_iOS.a; sourceTree = "<group>"; };
-		FE58C5C2E79DA184272C3CE0D4D721D2 /* ACPTargetPrefetchObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTargetPrefetchObject.h; path = include/ACPTargetPrefetchObject.h; sourceTree = "<group>"; };
+		DF3646FDBC9767BDEA64C026E3C70F28 /* empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = empty.m; path = include/empty.m; sourceTree = "<group>"; };
+		E1A77C5412E5994A55E895F8769F34B9 /* libACPLifecycle_iOS.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; path = libACPLifecycle_iOS.a; sourceTree = "<group>"; };
+		E250F83B0D66B7994A9549AD99DA8D30 /* ACPCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ACPCore-umbrella.h"; sourceTree = "<group>"; };
+		E8AD9F5DFF563376951F7D1F3A20339C /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Empty.m; path = include/Empty.m; sourceTree = "<group>"; };
+		EF95B6B086F914DFD0BCC9484BE77780 /* ACPUserProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPUserProfile.h; path = include/ACPUserProfile.h; sourceTree = "<group>"; };
+		F732660F936072D520BDC66483DD329E /* ACPAnalytics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPAnalytics.h; path = include/ACPAnalytics.h; sourceTree = "<group>"; };
+		F8CDA3C8733CA9C6D5CE7C4CF14283A2 /* ACPTarget.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ACPTarget.h; path = include/ACPTarget.h; sourceTree = "<group>"; };
+		FB94EE0F2969268DF2804144DFBF2F20 /* ACPCampaign-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ACPCampaign-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,11 +218,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9CDC48D08D49632FEB38E5CB0A1B4DF0 /* Frameworks */ = {
+		65ABA6C139830353FAEA38983031ADB9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4FD834468046737116E9B83022C1F6F /* Foundation.framework in Frameworks */,
+				C585DEF3C4AA069B9C22F18A687343E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7590CE85479ED73C059E58AE775A077A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707C9E14923EAC7B1E33CBDD5707C99D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,17 +253,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		16004DBCAF67F77066CCEBDB01F7F676 /* Support Files */ = {
+		02F7255D734AD48211165D9CFB0C1DEF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BDF0298E5590642D08B70A7A33953E4E /* ACPTarget.modulemap */,
-				DE18CACC4ED4744BFDADC9DA0D9108F3 /* ACPTarget.xcconfig */,
-				0B068BE0E61DCFC66BDE3E3AD7ABC151 /* ACPTarget-dummy.m */,
-				2BC73ACECF4C94294EA3D5203D5EE894 /* ACPTarget-prefix.pch */,
-				8452C5000D9EB335439D2ED2DF4A5763 /* ACPTarget-umbrella.h */,
+				D5673EFF24A1C0263CED95992B855A90 /* libACPTarget_iOS.a */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/ACPTarget";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AD530787224B872552D2441848C32D3 /* ACPTarget */ = {
+			isa = PBXGroup;
+			children = (
+				3F4AF10664C807BC6822B7DF2DF6E203 /* iOS */,
+				35AF5218D4911BDCC0FC4C611CD4AF42 /* Support Files */,
+			);
+			name = ACPTarget;
+			path = ACPTarget;
 			sourceTree = "<group>";
 		};
 		20B56609144CE204DFA8221F742B2D76 /* Frameworks */ = {
@@ -238,78 +279,106 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2AF25F22263ED36C2FC9D9A656747B06 /* iOS */ = {
+		23B3F572E8BF15EDBF8F9F82FE08F905 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				260A9995D44E76E223CFC44483772655 /* ACPTarget.h */,
-				FE58C5C2E79DA184272C3CE0D4D721D2 /* ACPTargetPrefetchObject.h */,
-				6D34D33860B2CFD01711FB25F666D00F /* ACPTargetRequestObject.h */,
-				716E09C1CA4C3860B75F765B954640BE /* empty.m */,
-				7DA098B873411F6C85BC526C7C75F77B /* Frameworks */,
+				25DA57E7440BC66476E2FFA6F4537117 /* ACPAnalytics.framework */,
+				5E859D741C73033CA0D132DD8423B1E6 /* ACPCampaign.framework */,
+				28EE6A1D870763296E7533B1F19C2522 /* ACPCore.framework */,
+				D87FD8F30A8A729DDB0A231E36916BFE /* ACPTarget.framework */,
+				08F15B3CD9EBA6AAC16044B4073D1F63 /* ACPUserProfile.framework */,
+				6E825E26731153CB6FC314E26AB69685 /* Pods_v5mobile.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		33C3B3D9878140CAB0A45584D527749D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				56267AEFC6DAE70DF73B60F75212FA76 /* libACPUserProfile_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		35AF5218D4911BDCC0FC4C611CD4AF42 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBE03C3CA83DA6C521E86B1613190776 /* ACPTarget.modulemap */,
+				4B5F358468B2373DF50DD721F9874C80 /* ACPTarget.xcconfig */,
+				2833A680EBD754DE48E9DA1AF099C3C9 /* ACPTarget-dummy.m */,
+				51C8B5D6AC04728C5DE8AC47A63C7DC9 /* ACPTarget-prefix.pch */,
+				D6F0C91CC59C9DDA935D83717DECE383 /* ACPTarget-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPTarget";
+			sourceTree = "<group>";
+		};
+		3F4AF10664C807BC6822B7DF2DF6E203 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F8CDA3C8733CA9C6D5CE7C4CF14283A2 /* ACPTarget.h */,
+				1FA187E914B60632494C5EA848C34084 /* ACPTargetPrefetchObject.h */,
+				1D91823EF0493E04BBFB4E39B352B488 /* ACPTargetRequestObject.h */,
+				DF3646FDBC9767BDEA64C026E3C70F28 /* empty.m */,
+				02F7255D734AD48211165D9CFB0C1DEF /* Frameworks */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		2B644829C4A3EA18FF725910E0267C95 /* ACPTarget */ = {
+		4ACD117AADD829DA1F7A03D1F9879CE1 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2AF25F22263ED36C2FC9D9A656747B06 /* iOS */,
-				16004DBCAF67F77066CCEBDB01F7F676 /* Support Files */,
+				6E7B68597DAEC1064C004DA01CB8828B /* ACPCampaign.h */,
+				B8FF0F78A880BC64F375760C4610524D /* Empty.m */,
+				AE8AF66009DEF573373B98BF36FAAF4E /* Frameworks */,
 			);
-			name = ACPTarget;
-			path = ACPTarget;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		3AD17B2141FCD4B48C7A14F6EEF9DE9F /* Support Files */ = {
+		57B4255B56A8FA0A22071B8319C7A97E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A6782733F3FD2DB022C2B5C2313A02F2 /* ACPUserProfile.modulemap */,
-				3BF0D6ED4DCB8BCF36EAB4F135AD4BB4 /* ACPUserProfile.xcconfig */,
-				11135EA09AB782F7A2D302BC5CB2B0C2 /* ACPUserProfile-dummy.m */,
-				0D372D56ECF5EB99FB13269A129884A1 /* ACPUserProfile-prefix.pch */,
-				F564B6170F8772EC3C4CD50209F6D1AA /* ACPUserProfile-umbrella.h */,
+				480F7B94E32B0B8633726021268CFFD4 /* libACPCore_iOS.a */,
+				2B1293A58EE3E3230F2BC8EAA824562E /* libACPIdentity_iOS.a */,
+				E1A77C5412E5994A55E895F8769F34B9 /* libACPLifecycle_iOS.a */,
+				C7D45886B1C31C56D1ED66B3BE567DFD /* libACPSignal_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64437C9AC9F7AFF28F57DF5E3F634A1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0ECE2FBE10659EB1C9B742CF92696F0 /* ACPAnalytics */,
+				BFF7C37121E60158AA4160A189E0A679 /* ACPCampaign */,
+				80C980DDD7F9C5A6FFF8F05DC058B88A /* ACPCore */,
+				1AD530787224B872552D2441848C32D3 /* ACPTarget */,
+				974E0C4D532CEF1B55FE88880B808B7F /* ACPUserProfile */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6CD0D0A844919355C58F5C08604A5048 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9BCC7D5F301A6D5CF96652C13887EA2F /* ACPUserProfile.modulemap */,
+				A1FC6D6E52BCAE89BCE0D27C9C7B6C2A /* ACPUserProfile.xcconfig */,
+				034E8F6E37912A2327C8A7996AAD552A /* ACPUserProfile-dummy.m */,
+				49527643739E376D435E4C065E01A018 /* ACPUserProfile-prefix.pch */,
+				57153CA69F999C1207E6C17D87FEA84A /* ACPUserProfile-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/ACPUserProfile";
 			sourceTree = "<group>";
 		};
-		67185BAB4DE7B0911D66BD0520A3985C /* Frameworks */ = {
+		76FE071286CB9A02E67D0647D67EE02C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				74D2FBC46DB304AECFF4AE438371E188 /* libACPUserProfile_iOS.a */,
+				F732660F936072D520BDC66483DD329E /* ACPAnalytics.h */,
+				84850A039FA7975E49C84EF1B4D98CC9 /* Empty.m */,
+				B990C94E87BC8ECB1EF3181EF4F92366 /* Frameworks */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		67A55B78DD3E14174519E03986FD8C56 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C8B8C3D808ACE7386F5554787233088A /* ACPAnalytics.modulemap */,
-				E67E434668BE0C85EAD97C26B8146D87 /* ACPAnalytics.xcconfig */,
-				740D246F40C98794CB460F20355E69BC /* ACPAnalytics-dummy.m */,
-				0BC68AE9940A6931B9842505283DDE90 /* ACPAnalytics-prefix.pch */,
-				D8914A2B14FB30A55F2CA1D7C31FEE01 /* ACPAnalytics-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ACPAnalytics";
-			sourceTree = "<group>";
-		};
-		71AAB97FF5C4E0323310BE0294A9DDCA /* ACPUserProfile */ = {
-			isa = PBXGroup;
-			children = (
-				EFE7DE92A673E6032ABE609E2E9C9EA7 /* iOS */,
-				3AD17B2141FCD4B48C7A14F6EEF9DE9F /* Support Files */,
-			);
-			name = ACPUserProfile;
-			path = ACPUserProfile;
-			sourceTree = "<group>";
-		};
-		7DA098B873411F6C85BC526C7C75F77B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				27675D6DADCB5795848BDAEAD5A25E0B /* libACPTarget_iOS.a */,
-			);
-			name = Frameworks;
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -317,20 +386,33 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				20B56609144CE204DFA8221F742B2D76 /* Frameworks */,
-				BD09D9AF54781048CDD7CAB10F9FB7EF /* Pods */,
-				977B03194FB5002F203D1C3A10FACFE2 /* Products */,
+				64437C9AC9F7AFF28F57DF5E3F634A1D /* Pods */,
+				23B3F572E8BF15EDBF8F9F82FE08F905 /* Products */,
 				9A60697602BF0E067E6AE1DC9BB451FB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8CA463AF1EFBF50ACA51D61E2C6895AE /* ACPAnalytics */ = {
+		80C980DDD7F9C5A6FFF8F05DC058B88A /* ACPCore */ = {
 			isa = PBXGroup;
 			children = (
-				E67BE8C740679F456B6BD613A84DFEBF /* iOS */,
-				67A55B78DD3E14174519E03986FD8C56 /* Support Files */,
+				A9EE8E7A7574577325837C7180399774 /* iOS */,
+				CF9AFC67A81C652218B2516F2398A96E /* Support Files */,
 			);
-			name = ACPAnalytics;
-			path = ACPAnalytics;
+			name = ACPCore;
+			path = ACPCore;
+			sourceTree = "<group>";
+		};
+		85F3A7AB1AD09B43806A719FE054C500 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA9804448699F43DCE7C8F8FE12D23E5 /* ACPAnalytics.modulemap */,
+				8DA597A4AB61438F00C01E712E727DB8 /* ACPAnalytics.xcconfig */,
+				8AE2FD898D392CDEA22C1373E7F46462 /* ACPAnalytics-dummy.m */,
+				122B728131B49B986727F80DCB23E74D /* ACPAnalytics-prefix.pch */,
+				010D7809A5348B51BF6803F45CDD9B7B /* ACPAnalytics-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ACPAnalytics";
 			sourceTree = "<group>";
 		};
 		8DB3DE4B600A9212C956CA9CEBD3251D /* iOS */ = {
@@ -345,24 +427,27 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		94DF0318E1D5B94D764F4C23791EBCE3 /* Frameworks */ = {
+		974E0C4D532CEF1B55FE88880B808B7F /* ACPUserProfile */ = {
 			isa = PBXGroup;
 			children = (
-				8DFE9894708B7BA4806BDEB9728FF4D8 /* libACPAnalytics_iOS.a */,
+				BA0D01A59C1E4AB772D027BA610B198C /* iOS */,
+				6CD0D0A844919355C58F5C08604A5048 /* Support Files */,
 			);
-			name = Frameworks;
+			name = ACPUserProfile;
+			path = ACPUserProfile;
 			sourceTree = "<group>";
 		};
-		977B03194FB5002F203D1C3A10FACFE2 /* Products */ = {
+		99A904605D481E8C90B785BA7675860C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7019BAC4FD6C1A4AD7381DDE204E89CC /* ACPAnalytics.framework */,
-				CA6121776AFD53AF3BD7560F57D149ED /* ACPCore.framework */,
-				6531E0A9F02B86B202C0BC2EA2BA6C64 /* ACPTarget.framework */,
-				CE344F1FCA35EE1626F9A3059E90265E /* ACPUserProfile.framework */,
-				A8B65196A5B1AB875E3A422E168001E8 /* Pods_v5mobile.framework */,
+				0D8390126CADB78F28744777AE5D67CE /* ACPCampaign.modulemap */,
+				19CBDF7B79E71658D087591CE6270351 /* ACPCampaign.xcconfig */,
+				FB94EE0F2969268DF2804144DFBF2F20 /* ACPCampaign-dummy.m */,
+				7B545BCDAA0DDCC040634BFC1CCC12DC /* ACPCampaign-prefix.pch */,
+				73513D837A105715721946C07AA37DFE /* ACPCampaign-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/ACPCampaign";
 			sourceTree = "<group>";
 		};
 		9A60697602BF0E067E6AE1DC9BB451FB /* Targets Support Files */ = {
@@ -373,88 +458,82 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A17199A8F58E9A9C7C2ABBE1F4550546 /* ACPCore */ = {
+		A9EE8E7A7574577325837C7180399774 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				EB25624ED18F96A34B81B9EB6DFA7F36 /* iOS */,
-				B290FBA7E16C27FC908703AC4417281A /* Support Files */,
+				902FA2BBD07123002DEF10DDE522E18D /* ACPCore.h */,
+				53DACDAF2ABB752302737F24B6D3AB16 /* ACPExtension.h */,
+				CB8A7AAE93C621C536AF846F84F4FB3B /* ACPExtensionApi.h */,
+				C65B554EE64FB597CC13DC195ADE426B /* ACPExtensionError.h */,
+				923B26D6A0D88241CFA535B0D743E0EE /* ACPExtensionEvent.h */,
+				D852763BE580DFF7DFA5A50B84CF311D /* ACPExtensionListener.h */,
+				558088354103EE90FF5C9AF6DB82B3F5 /* ACPIdentity.h */,
+				48D9986ED982DDAFB267775972D9DBCE /* ACPLifecycle.h */,
+				88A5D871E0C4FCC003E64F0FEAD126B5 /* ACPMobileVisitorId.h */,
+				9ED3F2F9C4D0997DF96CCC0F8F983558 /* ACPSignal.h */,
+				12BF0C033F607449093C51B595091881 /* Empty.m */,
+				57B4255B56A8FA0A22071B8319C7A97E /* Frameworks */,
 			);
-			name = ACPCore;
-			path = ACPCore;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		B290FBA7E16C27FC908703AC4417281A /* Support Files */ = {
+		AE8AF66009DEF573373B98BF36FAAF4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B193FACA8003E46BF5EC9EBAA6A03A93 /* ACPCore.modulemap */,
-				741C3E979D1179801A73B861CEB1E8B4 /* ACPCore.xcconfig */,
-				E80878CB5B5661B7FA33D5F574844AC3 /* ACPCore-dummy.m */,
-				40F791D45CE1EBCD88B998F5515687D6 /* ACPCore-prefix.pch */,
-				CA72CE06C555C8D3AC6DE20D1CD65259 /* ACPCore-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/ACPCore";
-			sourceTree = "<group>";
-		};
-		BD09D9AF54781048CDD7CAB10F9FB7EF /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8CA463AF1EFBF50ACA51D61E2C6895AE /* ACPAnalytics */,
-				A17199A8F58E9A9C7C2ABBE1F4550546 /* ACPCore */,
-				2B644829C4A3EA18FF725910E0267C95 /* ACPTarget */,
-				71AAB97FF5C4E0323310BE0294A9DDCA /* ACPUserProfile */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C9014AF31C61845F63912D59AD3FD99A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1521AC9CEBAC81F923467136C2629944 /* libACPCore_iOS.a */,
-				FD19EDEEE2DD7881326168EF5663B17B /* libACPIdentity_iOS.a */,
-				E8F6C8A1A80A1466F6352E86B9841FE0 /* libACPLifecycle_iOS.a */,
-				0D6D70340A10DF957804B9978BA652BE /* libACPSignal_iOS.a */,
+				3D04238F31238F2959CBE1921178E7CD /* libACPCampaign_iOS.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E67BE8C740679F456B6BD613A84DFEBF /* iOS */ = {
+		B0ECE2FBE10659EB1C9B742CF92696F0 /* ACPAnalytics */ = {
 			isa = PBXGroup;
 			children = (
-				0240B0BD83CD91D9E6A64004667D2D75 /* ACPAnalytics.h */,
-				379DDB376F105A01CB98A6BF29901A26 /* Empty.m */,
-				94DF0318E1D5B94D764F4C23791EBCE3 /* Frameworks */,
+				76FE071286CB9A02E67D0647D67EE02C /* iOS */,
+				85F3A7AB1AD09B43806A719FE054C500 /* Support Files */,
+			);
+			name = ACPAnalytics;
+			path = ACPAnalytics;
+			sourceTree = "<group>";
+		};
+		B990C94E87BC8ECB1EF3181EF4F92366 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				596A23318EB53494AE91B3460E2931B6 /* libACPAnalytics_iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA0D01A59C1E4AB772D027BA610B198C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EF95B6B086F914DFD0BCC9484BE77780 /* ACPUserProfile.h */,
+				E8AD9F5DFF563376951F7D1F3A20339C /* Empty.m */,
+				33C3B3D9878140CAB0A45584D527749D /* Frameworks */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		EB25624ED18F96A34B81B9EB6DFA7F36 /* iOS */ = {
+		BFF7C37121E60158AA4160A189E0A679 /* ACPCampaign */ = {
 			isa = PBXGroup;
 			children = (
-				00F03891EDF6D73E735D68CC35EF84CC /* ACPCore.h */,
-				34F6058E81A60D23C7C4C14A622C79C2 /* ACPExtension.h */,
-				853A03F543795A3D6211612F78570D1B /* ACPExtensionApi.h */,
-				3B0F493EB21196856F27654BB7E25644 /* ACPExtensionError.h */,
-				B93D6936BBD96856510D9A7E90BDBDDD /* ACPExtensionEvent.h */,
-				673F057245E228FADED6BF236B389619 /* ACPExtensionListener.h */,
-				16FA8FE9AEDF73BDA18E30154296CF24 /* ACPIdentity.h */,
-				8E8434CFDEE199DFA8352141D38BCAC5 /* ACPLifecycle.h */,
-				A00BBE06C27DC8D468CD51CABEA46AB9 /* ACPMobileVisitorId.h */,
-				F07985BBC538D490F51F0587C672A703 /* ACPSignal.h */,
-				995CB1C685037A1350CE73C4BCC5C905 /* Empty.m */,
-				C9014AF31C61845F63912D59AD3FD99A /* Frameworks */,
+				4ACD117AADD829DA1F7A03D1F9879CE1 /* iOS */,
+				99A904605D481E8C90B785BA7675860C /* Support Files */,
 			);
-			name = iOS;
+			name = ACPCampaign;
+			path = ACPCampaign;
 			sourceTree = "<group>";
 		};
-		EFE7DE92A673E6032ABE609E2E9C9EA7 /* iOS */ = {
+		CF9AFC67A81C652218B2516F2398A96E /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				F40D48BD65A8E645BF23D47F1E11C566 /* ACPUserProfile.h */,
-				0A4A5668CC23884AD8A0FF9BEC456719 /* Empty.m */,
-				67185BAB4DE7B0911D66BD0520A3985C /* Frameworks */,
+				8DC32602F055B48BB5BACB0553C0AB8F /* ACPCore.modulemap */,
+				938C01AE81882E551FD9AA2793D0865C /* ACPCore.xcconfig */,
+				C0E4DA8A5AEE341D5A01BC1F3076C6E2 /* ACPCore-dummy.m */,
+				1C4018D5D9AAED84885BE0F73F81B118 /* ACPCore-prefix.pch */,
+				E250F83B0D66B7994A9549AD99DA8D30 /* ACPCore-umbrella.h */,
 			);
-			name = iOS;
+			name = "Support Files";
+			path = "../Target Support Files/ACPCore";
 			sourceTree = "<group>";
 		};
 		FE826CC14BE8441828FF0156BB8903F2 /* Pods-v5mobile */ = {
@@ -487,11 +566,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		460E10EA83FD7A15DA0C745DD83D0592 /* Headers */ = {
+		523AAB31525E2607A701466C022E7B70 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA121494AFFA8CBA26C2423DCE6E1813 /* Pods-v5mobile-umbrella.h in Headers */,
+				889FABFD5A05D0F70775D221534A25F2 /* Pods-v5mobile-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71D93B97D11C43DB43361A802B8ABD60 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC41C7F628C24B8003C8D9DCBC7078A /* ACPCampaign-umbrella.h in Headers */,
+				19340F5DEA9EE39DE902D9343A804229 /* ACPCampaign.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +639,7 @@
 			);
 			name = ACPCore;
 			productName = ACPCore;
-			productReference = CA6121776AFD53AF3BD7560F57D149ED /* ACPCore.framework */;
+			productReference = 28EE6A1D870763296E7533B1F19C2522 /* ACPCore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		32DAFBCECFA5E67D4895478FDD41F6EC /* ACPAnalytics */ = {
@@ -570,29 +658,7 @@
 			);
 			name = ACPAnalytics;
 			productName = ACPAnalytics;
-			productReference = 7019BAC4FD6C1A4AD7381DDE204E89CC /* ACPAnalytics.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		4DA3C8638028DC0B009BB97B92031707 /* Pods-v5mobile */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 523A6A5C52D1F0FAE82FBEC84A982286 /* Build configuration list for PBXNativeTarget "Pods-v5mobile" */;
-			buildPhases = (
-				460E10EA83FD7A15DA0C745DD83D0592 /* Headers */,
-				9AA375B3B8B62DAD768D88472792784F /* Sources */,
-				9CDC48D08D49632FEB38E5CB0A1B4DF0 /* Frameworks */,
-				15B47BEFDD81989BAE84300E4CB7270E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				207D49CA9259939777DCBE1E753241AE /* PBXTargetDependency */,
-				AB6C2D910EF94B1042CD5B5D4312FCA7 /* PBXTargetDependency */,
-				3C68F591299D0FD83640D150BB0E0C14 /* PBXTargetDependency */,
-				FCBC4357152D85DE886A45F34182B4A2 /* PBXTargetDependency */,
-			);
-			name = "Pods-v5mobile";
-			productName = "Pods-v5mobile";
-			productReference = A8B65196A5B1AB875E3A422E168001E8 /* Pods_v5mobile.framework */;
+			productReference = 25DA57E7440BC66476E2FFA6F4537117 /* ACPAnalytics.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		7FE17BC2639EC3874DF9CB5B6CB1EBE6 /* ACPTarget */ = {
@@ -611,7 +677,7 @@
 			);
 			name = ACPTarget;
 			productName = ACPTarget;
-			productReference = 6531E0A9F02B86B202C0BC2EA2BA6C64 /* ACPTarget.framework */;
+			productReference = D87FD8F30A8A729DDB0A231E36916BFE /* ACPTarget.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		AB932F6C8C0D133F251240C1A41A1AB4 /* ACPUserProfile */ = {
@@ -630,7 +696,49 @@
 			);
 			name = ACPUserProfile;
 			productName = ACPUserProfile;
-			productReference = CE344F1FCA35EE1626F9A3059E90265E /* ACPUserProfile.framework */;
+			productReference = 08F15B3CD9EBA6AAC16044B4073D1F63 /* ACPUserProfile.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D81EE35B0834DF07E584364D393AC231 /* ACPCampaign */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC074F31D25B783E31946707C135A36F /* Build configuration list for PBXNativeTarget "ACPCampaign" */;
+			buildPhases = (
+				71D93B97D11C43DB43361A802B8ABD60 /* Headers */,
+				31EAF6844ED0974D236C84411CB09BB3 /* Sources */,
+				65ABA6C139830353FAEA38983031ADB9 /* Frameworks */,
+				BBF60C938745ECD2D38CC788C923A7D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A84C710B3ADB1A01210B06ACE5B0E751 /* PBXTargetDependency */,
+			);
+			name = ACPCampaign;
+			productName = ACPCampaign;
+			productReference = 5E859D741C73033CA0D132DD8423B1E6 /* ACPCampaign.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F4C44DAAE4AC3887F55A13E594ABED5B /* Pods-v5mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FBD4E779E71D51754C2FA41AAF19358 /* Build configuration list for PBXNativeTarget "Pods-v5mobile" */;
+			buildPhases = (
+				523AAB31525E2607A701466C022E7B70 /* Headers */,
+				247398F3106A5E928A43A38C933A37B9 /* Sources */,
+				7590CE85479ED73C059E58AE775A077A /* Frameworks */,
+				652CBA215985A3EDD78FC604EE168246 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EDA043B1ED3EB667185EE03CA148819F /* PBXTargetDependency */,
+				4768632EC4618D2BAC5A6906538720EF /* PBXTargetDependency */,
+				C5429025313900F3AAEE7D2E4F80F15D /* PBXTargetDependency */,
+				06395711043AB02EA8FA01C8941C8723 /* PBXTargetDependency */,
+				F643BA8F8845B02B94D5E4EDD27289DF /* PBXTargetDependency */,
+			);
+			name = "Pods-v5mobile";
+			productName = "Pods-v5mobile";
+			productReference = 6E825E26731153CB6FC314E26AB69685 /* Pods_v5mobile.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -650,27 +758,21 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 977B03194FB5002F203D1C3A10FACFE2 /* Products */;
+			productRefGroup = 23B3F572E8BF15EDBF8F9F82FE08F905 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				32DAFBCECFA5E67D4895478FDD41F6EC /* ACPAnalytics */,
+				D81EE35B0834DF07E584364D393AC231 /* ACPCampaign */,
 				11A4F6C5024418FBA0AD30F046932218 /* ACPCore */,
 				7FE17BC2639EC3874DF9CB5B6CB1EBE6 /* ACPTarget */,
 				AB932F6C8C0D133F251240C1A41A1AB4 /* ACPUserProfile */,
-				4DA3C8638028DC0B009BB97B92031707 /* Pods-v5mobile */,
+				F4C44DAAE4AC3887F55A13E594ABED5B /* Pods-v5mobile */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		15B47BEFDD81989BAE84300E4CB7270E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3F8E27992B7BAA8537998AC4724B1AEF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -678,7 +780,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		652CBA215985A3EDD78FC604EE168246 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		65F65251A836BF98409D178EF2F03536 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBF60C938745ECD2D38CC788C923A7D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -720,20 +836,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		247398F3106A5E928A43A38C933A37B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071B90A8E0EBBB1C2157ACEB99CE1B38 /* Pods-v5mobile-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31EAF6844ED0974D236C84411CB09BB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B92F0C5D03C8F4EC31E426B24BE85F71 /* ACPCampaign-dummy.m in Sources */,
+				6B7F17D20B4B10236FFC9F086407830D /* Empty.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		51BDBEA84CC8CB946351115BC6961A94 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				40A13EFA44D2161A8A83CC399B22FCF2 /* ACPUserProfile-dummy.m in Sources */,
 				32877C97212D3EAC2E55410901752C1B /* Empty.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9AA375B3B8B62DAD768D88472792784F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9D5022A6725C1F70AEC8E7D2BDC6FCC2 /* Pods-v5mobile-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -755,17 +880,11 @@
 			target = 11A4F6C5024418FBA0AD30F046932218 /* ACPCore */;
 			targetProxy = 3BD07A716154645160A6C3283ADB94FC /* PBXContainerItemProxy */;
 		};
-		207D49CA9259939777DCBE1E753241AE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ACPAnalytics;
-			target = 32DAFBCECFA5E67D4895478FDD41F6EC /* ACPAnalytics */;
-			targetProxy = 1B6FBDBA1ABE1BD6C1CF035227F16FB2 /* PBXContainerItemProxy */;
-		};
-		3C68F591299D0FD83640D150BB0E0C14 /* PBXTargetDependency */ = {
+		06395711043AB02EA8FA01C8941C8723 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ACPTarget;
 			target = 7FE17BC2639EC3874DF9CB5B6CB1EBE6 /* ACPTarget */;
-			targetProxy = 508E77E3986798D414752C78B9BD14E6 /* PBXContainerItemProxy */;
+			targetProxy = DCA9E9C7008D4F19F19B90163A1007C2 /* PBXContainerItemProxy */;
 		};
 		3E9C35B1A4874E764CF12117E5025633 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -773,11 +892,35 @@
 			target = 11A4F6C5024418FBA0AD30F046932218 /* ACPCore */;
 			targetProxy = 3F75C1D593BA6E50997982900B0C26B8 /* PBXContainerItemProxy */;
 		};
-		AB6C2D910EF94B1042CD5B5D4312FCA7 /* PBXTargetDependency */ = {
+		4768632EC4618D2BAC5A6906538720EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPCampaign;
+			target = D81EE35B0834DF07E584364D393AC231 /* ACPCampaign */;
+			targetProxy = 7A00E7E935CAD3A8C91BDA82E1125755 /* PBXContainerItemProxy */;
+		};
+		A84C710B3ADB1A01210B06ACE5B0E751 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ACPCore;
 			target = 11A4F6C5024418FBA0AD30F046932218 /* ACPCore */;
-			targetProxy = 643F58794B8093BA506A524D96BE2345 /* PBXContainerItemProxy */;
+			targetProxy = 76CBF532113230A9543AB52F44FDEB2A /* PBXContainerItemProxy */;
+		};
+		C5429025313900F3AAEE7D2E4F80F15D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPCore;
+			target = 11A4F6C5024418FBA0AD30F046932218 /* ACPCore */;
+			targetProxy = 2E2347CC6319F469A4A1CDDF666DD011 /* PBXContainerItemProxy */;
+		};
+		EDA043B1ED3EB667185EE03CA148819F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPAnalytics;
+			target = 32DAFBCECFA5E67D4895478FDD41F6EC /* ACPAnalytics */;
+			targetProxy = 00D302FBF68E44DCAE1897B31FE32420 /* PBXContainerItemProxy */;
+		};
+		F643BA8F8845B02B94D5E4EDD27289DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ACPUserProfile;
+			target = AB932F6C8C0D133F251240C1A41A1AB4 /* ACPUserProfile */;
+			targetProxy = 65C69DDB5F52990CF0DC30CCD359CA0B /* PBXContainerItemProxy */;
 		};
 		F68EC13284EE37D43B5ABF54EDBA4E3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -785,18 +928,12 @@
 			target = 11A4F6C5024418FBA0AD30F046932218 /* ACPCore */;
 			targetProxy = B6856679A7B3DDED34EEC5C6375480A2 /* PBXContainerItemProxy */;
 		};
-		FCBC4357152D85DE886A45F34182B4A2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ACPUserProfile;
-			target = AB932F6C8C0D133F251240C1A41A1AB4 /* ACPUserProfile */;
-			targetProxy = 72D62384A7FEB26186547FA870E46856 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0317864ACA429FDCA678E83A55C7F686 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 741C3E979D1179801A73B861CEB1E8B4 /* ACPCore.xcconfig */;
+			baseConfigurationReference = 938C01AE81882E551FD9AA2793D0865C /* ACPCore.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -832,7 +969,7 @@
 		};
 		0586DD7B96617A32DE56BF7B753BD3F4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BF0D6ED4DCB8BCF36EAB4F135AD4BB4 /* ACPUserProfile.xcconfig */;
+			baseConfigurationReference = A1FC6D6E52BCAE89BCE0D27C9C7B6C2A /* ACPUserProfile.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -869,7 +1006,7 @@
 		};
 		0599D5C7B9FD628942052B8A860CE538 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BF0D6ED4DCB8BCF36EAB4F135AD4BB4 /* ACPUserProfile.xcconfig */;
+			baseConfigurationReference = A1FC6D6E52BCAE89BCE0D27C9C7B6C2A /* ACPUserProfile.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -905,7 +1042,7 @@
 		};
 		0B26737FB3E048AB44331E1C85DA047C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE18CACC4ED4744BFDADC9DA0D9108F3 /* ACPTarget.xcconfig */;
+			baseConfigurationReference = 4B5F358468B2373DF50DD721F9874C80 /* ACPTarget.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -939,48 +1076,9 @@
 			};
 			name = Debug;
 		};
-		1862C6FC34EF4A6DFA984E074DE13DD0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 571C9FBDA99179D4BCA3536FB4BC204A /* Pods-v5mobile.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-v5mobile/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-v5mobile/Pods-v5mobile.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		1BB0A8D8B3A0C3EEE74F2113CE244302 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E67E434668BE0C85EAD97C26B8146D87 /* ACPAnalytics.xcconfig */;
+			baseConfigurationReference = 8DA597A4AB61438F00C01E712E727DB8 /* ACPAnalytics.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1014,6 +1112,42 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		3620CE613556620A7A6D45D0649F5582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19CBDF7B79E71658D087591CE6270351 /* ACPCampaign.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPCampaign/ACPCampaign-prefix.pch";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/ACPCampaign/ACPCampaign.modulemap";
+				PRODUCT_MODULE_NAME = ACPCampaign;
+				PRODUCT_NAME = ACPCampaign;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		40B45BB3CF3EE4476259302A7FAAD78F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1076,7 +1210,7 @@
 		};
 		459F2D4B26C4BFAC6473F4E55F8A86DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E67E434668BE0C85EAD97C26B8146D87 /* ACPAnalytics.xcconfig */;
+			baseConfigurationReference = 8DA597A4AB61438F00C01E712E727DB8 /* ACPAnalytics.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1110,11 +1244,10 @@
 			};
 			name = Debug;
 		};
-		54E8D85286299E8833987D31EE030782 /* Debug */ = {
+		78A3D699C559A418762B4987D7B928CC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B207E906F2A070AAFE667DAC3B758B2E /* Pods-v5mobile.debug.xcconfig */;
+			baseConfigurationReference = 19CBDF7B79E71658D087591CE6270351 /* ACPCampaign.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1125,28 +1258,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-v5mobile/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ACPCampaign/ACPCampaign-prefix.pch";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-v5mobile/Pods-v5mobile.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ACPCampaign/ACPCampaign.modulemap";
+				PRODUCT_MODULE_NAME = ACPCampaign;
+				PRODUCT_NAME = ACPCampaign;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		85ED3013A635C27F8B7FAF51362B108C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1214,7 +1347,7 @@
 		};
 		8A36B90A0813F2F4419756625C5AFAB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE18CACC4ED4744BFDADC9DA0D9108F3 /* ACPTarget.xcconfig */;
+			baseConfigurationReference = 4B5F358468B2373DF50DD721F9874C80 /* ACPTarget.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1249,9 +1382,47 @@
 			};
 			name = Release;
 		};
+		9F8724973D7E9BFAC85E3C6BF6518407 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B207E906F2A070AAFE667DAC3B758B2E /* Pods-v5mobile.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-v5mobile/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-v5mobile/Pods-v5mobile.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		AE20AFCC66A1C9F02028CCC867667294 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 741C3E979D1179801A73B861CEB1E8B4 /* ACPCore.xcconfig */;
+			baseConfigurationReference = 938C01AE81882E551FD9AA2793D0865C /* ACPCore.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1286,6 +1457,45 @@
 			};
 			name = Release;
 		};
+		F86F098248F41E41AD88B3AF658F727C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 571C9FBDA99179D4BCA3536FB4BC204A /* Pods-v5mobile.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-v5mobile/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-v5mobile/Pods-v5mobile.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1307,20 +1517,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		523A6A5C52D1F0FAE82FBEC84A982286 /* Build configuration list for PBXNativeTarget "Pods-v5mobile" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				54E8D85286299E8833987D31EE030782 /* Debug */,
-				1862C6FC34EF4A6DFA984E074DE13DD0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		76FA2D8DF2672428460F74574B292051 /* Build configuration list for PBXNativeTarget "ACPAnalytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				459F2D4B26C4BFAC6473F4E55F8A86DD /* Debug */,
 				1BB0A8D8B3A0C3EEE74F2113CE244302 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FBD4E779E71D51754C2FA41AAF19358 /* Build configuration list for PBXNativeTarget "Pods-v5mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F8724973D7E9BFAC85E3C6BF6518407 /* Debug */,
+				F86F098248F41E41AD88B3AF658F727C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1339,6 +1549,15 @@
 			buildConfigurations = (
 				0599D5C7B9FD628942052B8A860CE538 /* Debug */,
 				0586DD7B96617A32DE56BF7B753BD3F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC074F31D25B783E31946707C135A36F /* Build configuration list for PBXNativeTarget "ACPCampaign" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3620CE613556620A7A6D45D0649F5582 /* Debug */,
+				78A3D699C559A418762B4987D7B928CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

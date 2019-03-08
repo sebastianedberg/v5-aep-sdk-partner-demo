@@ -14,6 +14,9 @@ import ACPCore
 import ACPAnalytics
 import ACPTarget
 import ACPUserProfile
+import ACPCampaign
+
+
 
 
 @UIApplicationMain
@@ -36,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ACPIdentity.registerExtension();
         ACPUserProfile.registerExtension();
         //ACPAudience.registerExtension()
-        //ACPCampaign.registerExtension()
+        ACPCampaign.registerExtension()
         ACPTarget.registerExtension();
         ACPAnalytics.registerExtension();
         ACPLifecycle.registerExtension();
@@ -85,8 +88,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(launchConfig)
             return launchConfig
         } else {
+            /* max launch dev */
+            //return "launch-EN8b8872ffecf74be18a08a16bbab7010b-development"
             /* max launch prod */
-            return "launch-EN58fdfb72764a4f81b0aaaaa3af9f8e95"
+            return "launch-ENe4e77a4417cb4bce999d789cd79f1ceb"
         }
     }
     /**
