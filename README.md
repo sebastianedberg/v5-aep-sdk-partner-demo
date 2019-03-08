@@ -30,32 +30,22 @@ implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
 ```
 2. iOS
 ```
-pod 'ACPAnalytics', '~> 2.0'
 pod 'ACPTarget', '~> 2.0'
-pod 'ACPUserProfile', '~> 2.0'
+pod 'ACPAnalytics', '~> 2.0'
+pod 'ACPCampaign', '~> 1.0'
 pod 'ACPCore', '~> 2.0'
+pod 'ACPUserProfile', '~> 2.0'
 ```
 
 ## Requirements for Push and In-App messages
 
-If you are part of the beta please look at these requirements:
-1. ACS 18.9 or higher
-2. [Adobe Launch Integration](https://launch-integration.adobe.com)
+1. ACS 19.1 or higher
+2. [Adobe Launch](https://launch.adobe.com)
 3. [Adobe.IO Integration setup for Launch](https://console.adobe.io/integrations)
 4. TechOps connect ACS instance to Launch with Adobe.io details
-5. TechOps provision MCIAS endpoint (Experience Platform In App Service)
-6. [AEP SDK Campaign Beta 1.0.2](https://cocoapods.org/pods/ACPCampaignBeta) only for iOS available. Android in development
+5. TechOps configure MCIAS endpoint (Experience Platform In App Service)
+6. [AEP SDK Campaign](https://cocoapods.org/pods/ACPCampaign) only for iOS available. Android in development
 
-The Podfile references the following libraries:
-```
-# Pods for v5mobile
-pod 'ACPAudienceBeta', '~> 1.0.2beta'
-pod 'ACPCampaignBeta', '~> 1.0.2beta'
-pod 'ACPAnalyticsBeta', '~> 1.0.2beta'
-pod 'ACPTargetBeta', '~> 1.0.2beta'
-pod 'ACPUserProfileBeta', '~> 1.0.1beta'
-pod 'ACPCoreBeta', '~> 1.0.2beta'
-```
 
 ## Installation
 
