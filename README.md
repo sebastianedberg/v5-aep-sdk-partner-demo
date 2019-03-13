@@ -72,12 +72,12 @@ Once the Launch API is publicly available I will update the below Postman Collec
 In Launch you need to configure Data Elements and Rules besides the Campaign extension.
 
 1. Data Elements
-* camp-server - Data Element Type - Free Form **>** Value: **~state.com.adobe.module.configuration/campaign.server**
-* pkey - Data Element Type - Free Form **>** Value: **~state.com.adobe.module.configuration/campaign.pkey**
+* camp-server - Data Element Type - Campaign Extension **>** Value: **Campaign Server**
+* pkey - Data Element Type - Campaign Extension **>** Value: **PKey**
 * mcid - Data Element Type - Experience Cloud ID
-* id   - Data Element Type - Free Form **>** Value: id
-* hashedId - Data Element Type - ContextData **>** Value: hashedId
-* pushPlatform - Data Element Type - ContextData **>** Value: pushPlatform
+* id   - Data Element Type - Free Form **>** Value: **id**
+* hashedId - Data Element Type - ContextData **>** Key: **hashedId**
+* pushPlatform - Data Element Type - ContextData **>** Key: **pushPlatform**
 
 2. Rules
 * IAM-Tracking - Action **>** Send Postback **>** Value: **https://{%%camp-server%%}/r/?id={%%id%%}&mcid={%%mcid%%}**
