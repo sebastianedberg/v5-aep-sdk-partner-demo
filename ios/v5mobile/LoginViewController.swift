@@ -24,6 +24,10 @@ class LoginViewController: ViewController {
      */
     var emailId:String = ""
     /**
+     * Experience Cloud Id
+     */
+    var ecid:String = ""
+    /**
      * @brief Send hashed id string as identifier to Experience Cloud Id service.
      */
     @IBAction func loginTapped(_ sender: Any) {
@@ -68,6 +72,7 @@ class LoginViewController: ViewController {
             DispatchQueue.main.async {
                 let text = "Retrieved Experience Cloud Id: \(retrievedCloudId ?? "no value")";
                 self.outputTextView.text = text;
+                self.ecid = retrievedCloudId ?? "no ecid received";
             }
         }
         /**
@@ -93,20 +98,16 @@ class LoginViewController: ViewController {
         /**
          * @example Launch rule - Send PII
          {
-         "userKey": "{%%contextdata.userKey%%}",
-         "pushPlatform": "{%%contextdata.pushPlatform%%}",
+         "pushPlatform": "{%%pushPlatform%%}",
          "marketingCloudId": "{%%mcid%%}",
-         "cusEmail": "{%%contextdata.cusEmail%%}",
-         "cusFirstName": "{%%contextdata.cusFirstName%%}",
-         "cusLastName": "{%%contextdata.cusLastName%%}"
+         "cusExternalId": "{%%hashedId%%}"
          }
         */
         
         print("collecting PII for: \(hashedId)")
         
-        let data:[String:String] = ["userKey":self.hashedId,
-                                    "pushPlatform":"apns",
-                                    "cusHashedId":self.hashedId]
+        let data:[String:String] = ["pushPlatform":"apns",
+                                    "hashedId": hashedId]
         ACPCore.collectPii(data)
     }
     
