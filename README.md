@@ -75,11 +75,13 @@ In Launch you need to configure Data Elements and Rules besides the Campaign ext
 * camp-server - Data Element Type - Free Form **>** Value: **~state.com.adobe.module.configuration/campaign.server**
 * pkey - Data Element Type - Free Form **>** Value: **~state.com.adobe.module.configuration/campaign.pkey**
 * mcid - Data Element Type - Experience Cloud ID
+* id   - Data Element Type - Free Form **>** Value: id
+* hashedId - Data Element Type - ContextData **>** Value: hashedId
+* pushPlatform - Data Element Type - ContextData **>** Value: pushPlatform
 
 2. Rules
 * IAM-Tracking - Action **>** Send Postback **>** Value: **https://{%%camp-server%%}/r/?id={%%id%%}&mcid={%%mcid%%}**
-
-* [Detailed setup guide](https://helpx.adobe.com/campaign/standard/administration/using/configuring-a-mobile-application-using-sdk-v5.html#setting-up-your-adobe-launch-application-in-adobe-campaign)
+* [Detailed setup guide](https://helpx.adobe.com/campaign/kb/configuring-app-sdk.html#Step3CreaterulesforInApptrackingpostback)
 
 ### Push Configuration
 
@@ -91,7 +93,7 @@ How to configure the mobile app channel in Adobe Campaign Standard and AEP SDK.
 * [Trouble Shooting](https://marketing.adobe.com/resources/help/en_US/mobile/ios/c_troubleshooting-push-messaging.html)
 
 A major change from SDK 4 to 5 is that there are rules to collect PII in Launch now instead of coding some of the logic into the app.
-* [Setup rules in Launch and ACS](https://helpx.adobe.com/campaign/standard/administration/using/configuring-a-mobile-application-using-sdk-v5.html)
+* [Setup rules in Launch and ACS](https://helpx.adobe.com/campaign/kb/configuring-app-sdk.html)
 
 ## AEM CaaS
 
@@ -139,7 +141,7 @@ Please give me feedback on any section of this app - code, documentation, bugs, 
 
 ## Versioning
 
-Current version is 1.0
+Current version is 1.2
 
 ## Roadmap
 

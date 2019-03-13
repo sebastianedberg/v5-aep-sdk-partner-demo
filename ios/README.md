@@ -22,13 +22,12 @@ The app does already include the latest version through [CocoaPods](https://coco
 
 ## Requirements for Push and In-App messages
 
-During Beta:
-1. ACS 18.9 or higher
-2. [Adobe Launch Integration](https://launch-integration.adobe.com)
+1. ACS 19.1 or higher
+2. [Adobe Launch](https://launch.adobe.com)
 3. [Adobe.IO Integration setup for Launch](https://console.adobe.io/integrations)
 4. TechOps connect ACS instance to Launch with Adobe.io details
-5. TechOps provision MCIAS endpoint (Experience Platform In App Service)
-5. [AEP SDK Campaign Beta 1.0.2](https://cocoapods.org/pods/ACPCampaignBeta)
+5. TechOps configure MCIAS endpoint (Experience Platform In App Service)
+6. [AEP SDK Campaign](https://cocoapods.org/pods/ACPCampaign) only for iOS available. Android in development
 
 ## Installation
 
