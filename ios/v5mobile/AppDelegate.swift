@@ -89,9 +89,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return launchConfig
         } else {
             /* max launch dev */
-            //return "launch-EN8b8872ffecf74be18a08a16bbab7010b-development"
+            return "launch-EN8b8872ffecf74be18a08a16bbab7010b-development"
             /* max launch prod */
-            return "launch-ENe4e77a4417cb4bce999d789cd79f1ceb"
+            //return "launch-ENe4e77a4417cb4bce999d789cd79f1ceb"
         }
     }
     /**
