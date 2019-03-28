@@ -15,8 +15,7 @@ import ACPAnalytics
 import ACPTarget
 import ACPUserProfile
 import ACPCampaign
-
-
+//import AdobeBranchExtension/AdobeBranchExtension
 
 
 @UIApplicationMain
@@ -33,8 +32,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override for customization after application launch.
         let appIdConfig = self.readConfigFromStorage()
         
-        ACPCore.setLogLevel(ACPMobileLogLevel.debug)
-        //ACPCore.setLogLevel(ACPMobileLogLevel.verbose);
+        //ACPCore.setLogLevel(ACPMobileLogLevel.debug)
+        ACPCore.setLogLevel(ACPMobileLogLevel.verbose);
         ACPCore.configure(withAppId: appIdConfig);
         ACPIdentity.registerExtension();
         ACPUserProfile.registerExtension();
@@ -44,6 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ACPAnalytics.registerExtension();
         ACPLifecycle.registerExtension();
         ACPSignal.registerExtension();
+        //AdobeBranchExtension.registerExtension()
         
         /**
          * Set AdID in the context
@@ -88,10 +88,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(launchConfig)
             return launchConfig
         } else {
-            /* max launch dev */
-            return "launch-EN8b8872ffecf74be18a08a16bbab7010b-development"
             /* max launch prod */
-            //return "launch-ENe4e77a4417cb4bce999d789cd79f1ceb"
+            return "launch-ENce85a04aef9e4f92b08bd774addd0b78"
+            //return "launch-EN09f8920cb46c4e6892b96e75160c1435-development"
         }
     }
     /**
@@ -122,6 +121,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("didReceiveRemoteNotification")
         //let deeplinkString = userInfo["adb_deeplink"] as? String
         //let pushPayloadId = userInfo["adb_m_id"] as? String
+        print("userInfo: \(userInfo)")
+        if let aps = userInfo["aps"] as? NSDictionary{
+            if let alert = aps["alert"] as? NSDictionary
+            {
+                if let message = alert["message"] as? NSString
+                {
+                    print("push message: \(message)");
+                }
+            }
+            else if let alert = aps["alert"] as? NSString
+            {
+                print("push alert: \(alert)");
+                let alert = UIAlertController(title: "Alert", message: alert as String, preferredStyle: UIAlertController.Style.alert)
+                alert.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
+                self.window?.rootViewController?.present(alert, animated: true, completion: nil)
+            }
+            if  let b = aps["badge"] as? Int
+            {
+                print("push badge number: \(b)");
+                application.applicationIconBadgeNumber = b;
+            }
+        }
     }
     
     func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {

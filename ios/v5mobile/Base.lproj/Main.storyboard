@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kEH-46-kHW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kEH-46-kHW">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -101,7 +101,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1A-Wm-tCi">
                                 <rect key="frame" x="10" y="98" width="355" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.87804710580000001" green="1" blue="0.88986324640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Default content" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v2v-fi-kdg">
@@ -170,9 +170,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Launch Library" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yq-Tt-RyG">
-                                <rect key="frame" x="10" y="126" width="355" height="21"/>
+                                <rect key="frame" x="10" y="123" width="355" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.87804710580000001" green="1" blue="0.88986324640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="launch-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rha-BX-xCa">
@@ -182,8 +182,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIS-6w-qT6">
-                                <rect key="frame" x="170.66666666666666" y="193" width="34" height="30"/>
-                                <state key="normal" title="Save"/>
+                                <rect key="frame" x="170" y="195" width="35" height="30"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.87804710580000001" green="1" blue="0.88986324640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="saveCfg:" destination="etF-Ys-N9K" eventType="touchUpInside" id="Deg-3h-hm5"/>
                                 </connections>
@@ -191,14 +193,15 @@
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="0yq-Tt-RyG" firstAttribute="top" secondItem="NgW-F0-maF" secondAttribute="top" constant="35" id="5ip-v6-mCf"/>
+                            <constraint firstItem="NgW-F0-maF" firstAttribute="trailing" secondItem="FIS-6w-qT6" secondAttribute="trailing" constant="170" id="92G-L4-Bcc"/>
                             <constraint firstItem="rha-BX-xCa" firstAttribute="leading" secondItem="NgW-F0-maF" secondAttribute="leading" constant="10" id="E48-gK-Pgp"/>
-                            <constraint firstItem="rha-BX-xCa" firstAttribute="centerX" secondItem="FIS-6w-qT6" secondAttribute="centerX" id="J0d-13-kVZ"/>
                             <constraint firstItem="NgW-F0-maF" firstAttribute="trailing" secondItem="rha-BX-xCa" secondAttribute="trailing" constant="10" id="M10-o4-V1h"/>
-                            <constraint firstItem="FIS-6w-qT6" firstAttribute="top" secondItem="rha-BX-xCa" secondAttribute="bottom" constant="8" symbolic="YES" id="Ns5-fY-CB3"/>
                             <constraint firstItem="rha-BX-xCa" firstAttribute="top" secondItem="ZOx-w5-z9j" secondAttribute="top" constant="155" id="TZU-Yc-1Lv"/>
                             <constraint firstItem="NgW-F0-maF" firstAttribute="trailing" secondItem="0yq-Tt-RyG" secondAttribute="trailing" constant="10" id="TkN-Ys-HSI"/>
+                            <constraint firstItem="FIS-6w-qT6" firstAttribute="leading" secondItem="NgW-F0-maF" secondAttribute="leading" constant="170" id="Zcv-gS-Lyg"/>
                             <constraint firstItem="0yq-Tt-RyG" firstAttribute="leading" secondItem="NgW-F0-maF" secondAttribute="leading" constant="10" id="dd5-u8-wKF"/>
-                            <constraint firstItem="rha-BX-xCa" firstAttribute="top" secondItem="0yq-Tt-RyG" secondAttribute="bottom" constant="8" symbolic="YES" id="nc1-Wg-aEq"/>
+                            <constraint firstItem="FIS-6w-qT6" firstAttribute="top" secondItem="rha-BX-xCa" secondAttribute="bottom" constant="10" id="mHh-36-uCn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NgW-F0-maF"/>
                     </view>
@@ -270,6 +273,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="tintColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Fhl-su-y1G" firstAttribute="top" secondItem="myN-kk-g7Q" secondAttribute="top" constant="14" id="QtF-Ut-V4s"/>
                             <constraint firstItem="Fhl-su-y1G" firstAttribute="leading" secondItem="myN-kk-g7Q" secondAttribute="leading" constant="10" id="VUB-3T-Dcd"/>
@@ -307,7 +311,7 @@
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="uFw-KE-wAW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.87804710580000001" green="1" blue="0.88986324640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hiL-BE-MA8">
@@ -319,7 +323,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EXx-lq-S6h">
-                                <rect key="frame" x="10" y="139" width="355" height="50.333333333333343"/>
+                                <rect key="frame" x="10" y="139" width="355" height="110.33333333333331"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Opm-vm-PxK">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="30"/>
@@ -330,13 +334,26 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Context Data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndi-T3-hIT">
                                         <rect key="frame" x="0.0" y="30" width="355" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.87804710580000001" green="1" blue="0.88986324640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeU-CC-4gC">
+                                        <rect key="frame" x="0.0" y="50.333333333333343" width="355" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBw-8j-6cw">
+                                        <rect key="frame" x="0.0" y="80.333333333333343" width="355" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxl-mD-Zde">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxl-mD-Zde">
                                 <rect key="frame" x="10" y="295.33333333333331" width="355" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Send">
                                     <color key="titleColor" red="0.87804710580000001" green="1" blue="0.88986324640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -344,36 +361,15 @@
                                     <action selector="sendAction:" destination="MNA-ZB-YQS" eventType="touchUpInside" id="J4x-zf-uW6"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Value" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QeU-CC-4gC">
-                                <rect key="frame" x="10" y="255.33333333333337" width="355" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Key" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nBw-8j-6cw">
-                                <rect key="frame" x="10" y="204.33333333333334" width="355" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="gRV-7l-NYI" firstAttribute="trailing" secondItem="EXx-lq-S6h" secondAttribute="trailing" constant="10" id="5H4-Yg-RAS"/>
-                            <constraint firstItem="nBw-8j-6cw" firstAttribute="trailing" secondItem="EXx-lq-S6h" secondAttribute="trailing" id="7fo-rr-WYh"/>
                             <constraint firstItem="EXx-lq-S6h" firstAttribute="leading" secondItem="gRV-7l-NYI" secondAttribute="leading" constant="10" id="8B8-RI-2OY"/>
                             <constraint firstItem="gRV-7l-NYI" firstAttribute="trailing" secondItem="gA6-FM-k1i" secondAttribute="trailing" constant="10" id="8Tr-bk-37O"/>
-                            <constraint firstItem="nBw-8j-6cw" firstAttribute="trailing" secondItem="zxl-mD-Zde" secondAttribute="trailing" id="DGw-vl-DsU"/>
                             <constraint firstItem="gA6-FM-k1i" firstAttribute="leading" secondItem="gRV-7l-NYI" secondAttribute="leading" constant="10" id="HSz-B6-pbM"/>
-                            <constraint firstItem="nBw-8j-6cw" firstAttribute="leading" secondItem="zxl-mD-Zde" secondAttribute="leading" id="PcZ-ka-x18"/>
-                            <constraint firstItem="nBw-8j-6cw" firstAttribute="leading" secondItem="EXx-lq-S6h" secondAttribute="leading" id="QnO-hi-qvL"/>
-                            <constraint firstItem="nBw-8j-6cw" firstAttribute="top" secondItem="EXx-lq-S6h" secondAttribute="bottom" constant="15" id="ViB-1n-yHp"/>
-                            <constraint firstItem="zxl-mD-Zde" firstAttribute="top" secondItem="QeU-CC-4gC" secondAttribute="bottom" constant="10" id="cXX-5J-PYz"/>
                             <constraint firstItem="EXx-lq-S6h" firstAttribute="top" secondItem="gA6-FM-k1i" secondAttribute="bottom" constant="10" id="chk-33-9VO"/>
-                            <constraint firstItem="nBw-8j-6cw" firstAttribute="leading" secondItem="QeU-CC-4gC" secondAttribute="leading" id="fts-ES-ai7"/>
                             <constraint firstItem="gA6-FM-k1i" firstAttribute="top" secondItem="gRV-7l-NYI" secondAttribute="top" constant="10" id="g1A-9D-B1t"/>
-                            <constraint firstItem="QeU-CC-4gC" firstAttribute="top" secondItem="nBw-8j-6cw" secondAttribute="bottom" constant="21" id="m2Q-lY-11A"/>
-                            <constraint firstItem="nBw-8j-6cw" firstAttribute="trailing" secondItem="QeU-CC-4gC" secondAttribute="trailing" id="yDN-cX-vBh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gRV-7l-NYI"/>
                     </view>
@@ -480,6 +476,8 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FvT-JG-Abb">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.87804710580000001" green="1" blue="0.88986324640000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
