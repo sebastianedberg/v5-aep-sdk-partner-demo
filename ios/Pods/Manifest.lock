@@ -4,10 +4,10 @@ PODS:
     - ACPCore (~> 2.0)
   - ACPAnalytics/iOS (2.0.2):
     - ACPCore (~> 2.0)
-  - ACPCampaign (1.0.0):
-    - ACPCampaign/iOS (= 1.0.0)
+  - ACPCampaign (1.0.1):
+    - ACPCampaign/iOS (= 1.0.1)
     - ACPCore (~> 2.0)
-  - ACPCampaign/iOS (1.0.0):
+  - ACPCampaign/iOS (1.0.1):
     - ACPCore (~> 2.0)
   - ACPCore (2.1.0):
     - ACPCore/iOS (= 2.1.0)
@@ -40,11 +40,11 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   ACPAnalytics: 484376f18a2ff96a7fcfad3a5448af68f40cc44b
-  ACPCampaign: 2f12394d79609ddc530effb538458fdaaf822223
+  ACPCampaign: 13138db6a3aee13d469e78db98d2f257d3dca119
   ACPCore: 5419b9772c0b939203d967f75d22676e390bcb46
   ACPTarget: d55590eeeafb66bcbbdd66b24749d23b60b09e9a
   ACPUserProfile: d5141c8f5154e10e3a08124649ddaae13efd5131
 
-PODFILE CHECKSUM: 28284fbb95f3beeb0e4096e7746d4cfe978585df
+PODFILE CHECKSUM: 4f02bd71712d3d20d419d68bce0e34adc79fb825
 
 COCOAPODS: 1.5.3

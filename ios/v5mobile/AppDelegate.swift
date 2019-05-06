@@ -11,11 +11,12 @@ import AdSupport
 import UserNotifications
 
 import ACPCore
+//import ACPTargetVEC
 import ACPAnalytics
 import ACPTarget
 import ACPUserProfile
 import ACPCampaign
-//import AdobeBranchExtension/AdobeBranchExtension
+
 
 
 @UIApplicationMain
@@ -29,27 +30,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        // Override for customization after application launch.
+        // Overwrite if custom Launch config was set in the application.
         let appIdConfig = self.readConfigFromStorage()
         
-        //ACPCore.setLogLevel(ACPMobileLogLevel.debug)
-        ACPCore.setLogLevel(ACPMobileLogLevel.verbose);
-        ACPCore.configure(withAppId: appIdConfig);
-        ACPIdentity.registerExtension();
-        ACPUserProfile.registerExtension();
-        //ACPAudience.registerExtension()
-        ACPCampaign.registerExtension()
-        ACPTarget.registerExtension();
-        ACPAnalytics.registerExtension();
-        ACPLifecycle.registerExtension();
-        ACPSignal.registerExtension();
-        //AdobeBranchExtension.registerExtension()
+        ACPCore.setLogLevel(ACPMobileLogLevel.debug)
+        ACPCore.configure(withAppId: appIdConfig)
         
-        /**
-         * Set AdID in the context
-         */
-        let idfa = ASIdentifierManager.shared().advertisingIdentifier.uuidString
-        ACPCore.setAdvertisingIdentifier(idfa)
+        //ACPTargetVEC.registerExtension()
+        //ACPTargetVEC.allowDebugLogging(true)
+        
+        ACPCampaign.registerExtension()
+        ACPTarget.registerExtension()
+        ACPAnalytics.registerExtension()
+        ACPIdentity.registerExtension()
+        ACPUserProfile.registerExtension()
+        ACPLifecycle.registerExtension()
+        ACPSignal.registerExtension()
         
         ACPCore.start {
             ACPCore.lifecycleStart(nil)
@@ -88,7 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print(launchConfig)
             return launchConfig
         } else {
-            /* max launch prod */
+            /* launch prod */
             return "launch-ENce85a04aef9e4f92b08bd774addd0b78"
             //return "launch-EN09f8920cb46c4e6892b96e75160c1435-development"
         }
@@ -122,6 +118,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //let deeplinkString = userInfo["adb_deeplink"] as? String
         //let pushPayloadId = userInfo["adb_m_id"] as? String
         print("userInfo: \(userInfo)")
+    
+        let delivery = userInfo["_dId"] ?? nil;
+        let broadLog = userInfo["_mid"] ?? nil;
+        // only send the hit if the app is not active
+        if(application.applicationState != UIApplication.State.active && delivery != nil && broadLog != nil) {
+            ACPCore.trackAction("tracking", data: ["deliveryId": delivery ?? "", "broadlogId": broadLog ?? "", "action": "7"])
+        }
+    
         if let aps = userInfo["aps"] as? NSDictionary{
             if let alert = aps["alert"] as? NSDictionary
             {

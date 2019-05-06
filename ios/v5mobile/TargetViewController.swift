@@ -10,10 +10,79 @@ import Foundation
 import UIKit
 import ACPCore
 import ACPTarget
+//import ACPTargetVEC
 
 class TargetViewController: ViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var label: UILabel!
+    
+    @IBAction func requestDMImage(_ sender: Any) {
+        
+        var dynamicMediaTitle = "unknown-user"
+        if (User.getInstance().authstate) {
+            dynamicMediaTitle = User.getInstance().username
+        }
+                
+        let url = URL(string: "http://s7g3.scene7.com/is/image/AdobeDACHSC/offer?$layer_1_bgcolor=003399&$offertxt=\(dynamicMediaTitle)&$layer_2_textattr=32%2Csharp")
+        
+        DispatchQueue.global().async {
+            let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+            DispatchQueue.main.async {
+                self.imageView.image = UIImage(data: data!)
+            }
+        }
+    }
+    @IBAction func requestAbTest(_ sender: Any) {
+        
+        var mboxParams = ["mobileUserType":"standard"]
+        if (User.getInstance().authstate) {
+            mboxParams = ["mobileUserType": "platinum"]
+        }
+        let profileParameters = ["keyword":"50% off"]
+        let request = ACPTargetRequestObject(name: "abMobileOffer", defaultContent: "Default AB Offer Content", mboxParameters: mboxParams, callback: {(content: String?) -> Void in
+            
+            print("target response: \(String(describing: content))")
+            
+            DispatchQueue.main.async {
+                self.textView.text = content
+            }
+        })
+        let requests = [request]
+        ACPTarget.loadRequests(requests, withProfileParameters: profileParameters)
+    }
+    @IBOutlet weak var imageView: UIImageView!
+    @IBAction func requestAutomatedOffer(_ sender: Any) {
+        
+        var mboxParams = ["mobileUserType":"standard"]
+        if (User.getInstance().authstate) {
+            mboxParams = ["mobileUserType": "platinum"]
+        }
+        let request = ACPTargetRequestObject(name: "automatedMobileOffer", defaultContent: "", mboxParameters: mboxParams, callback: {(content: String?) -> Void in
+            
+            print("target response: \(String(describing: content))")
+            
+            var offerContent = String(content ?? "")
+            if (offerContent.count > 0) {
+                let range = offerContent.index(offerContent.endIndex, offsetBy: -3)..<offerContent.endIndex
+                offerContent.removeSubrange(range)
+                let startIndex = offerContent.index(offerContent.startIndex, offsetBy: 10)
+                print("startIndex: \(startIndex) -- endIndex: \(range)")
+                let imgHref = offerContent[startIndex...]
+                print("url: \(imgHref)")
+                let url = URL(string: String(imgHref))
+                
+                DispatchQueue.global().async {
+                    let data = try? Data(contentsOf: url!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+                    DispatchQueue.main.async {
+                        self.imageView.image = UIImage(data: data!)
+                    }
+                }
+            }
+        })
+        
+        let requests = [request]
+        ACPTarget.loadRequests(requests, withProfileParameters: [:])
+    }
     
     @IBAction func requestTarget(_ sender: Any) {
         
@@ -54,11 +123,20 @@ class TargetViewController: ViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        /*
+        let mboxParams = ["mboxparam1":"mboxvalue1"]
+        let profileParams = ["profilekey1":"profilevalue1"]
+        let product : TargetProduct = TargetProduct.init(productId: "1234", categoryId: "furniture")
+        let order : TargetOrder = TargetOrder.init(orderId: "12345", total: 123.45, purchasedProductIds: ["100", "200"])
+        let targetParams : TargetParameters = TargetParameters.init(parameters: mboxParams, profileParameters: profileParams, product: product, order: order)
+        ACPTargetVEC.setGlobalRequest(targetParams)
+        */
+        
         /**
          * Send default state view for this view.
          */
         ACPCore.trackState("TargetView", data: ["category": "target"])
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
