@@ -1,4 +1,4 @@
-# Partner Mobile Accelerator - v5mobile - AEP SDK - Android
+# Partner Mobile Accelerator - v5mobile - AEP SDK - iOS
 
 This project is based on the the newly released Adobe Experience Platform SDK for Mobile and has been adapted to be easily integrated in the partner sandbox environment.
 
@@ -6,13 +6,13 @@ This project is based on the the newly released Adobe Experience Platform SDK fo
 
 This project is solely to be seen as a demo app of the AEP SDK capabilities and accelerator and not a production ready implementation.
 
-## SDK V5
+## AEP SDK
 
-In this demo app you will be using the [Adobe Experience Platform SDK for Android](https://aep-sdks.gitbook.io/docs/)
+In this demo app you will be using the [Adobe Experience Platform SDK for iOS](https://aep-sdks.gitbook.io/docs/)
 
 ## Download SDK
 
-The app does already include the latest version through [Gradle](https://gradle.org/) but if you want to update the SDK feel free to do so. Be aware that updates might effect the code base. Please test it thoroughly.
+The app does already include the latest version through [cocoapods](https://cocoapods.org/) but if you want to update the SDK feel free to do so. Be aware that updates might effect the code base. Please test it thoroughly.
 
 * [Get the SDK](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk)
 * [Community Forum](https://forums.adobe.com/community/experience-cloud/platform/core-services/mobile-service)
@@ -26,7 +26,7 @@ The very first thing to do is to update the launch config id in  *MainActivity.j
 
 ### Push Configuration
 
-Add your google-services.json after you have generated your own FCM token (Google Firebase Cloud Messaging) and add the token to the Adobe Campaign AEP SDK mobile channel.
+Update the signing section under Project > General with your own account and bundle identifier. You can now generate the push certificates under the Apple Developer Program (https://developer.apple.com). Remember to generate a certifcate that contains development and prod in one and add the PEM cert to the Adobe Campaign AEP SDK mobile channel.
 
 ### Setup Analytics
 
@@ -43,7 +43,7 @@ Create a new mobile property. Go to *Extensions* **>** Catalog and install Mobil
 
 ## Built With
 
-* [Android Studio 3.2.1](https://developer.android.com) - Android IDE
+* [Xcode 10.2.1](https://developer.apple.com) - Apple Xcode IDE
 
 ## Contributing
 

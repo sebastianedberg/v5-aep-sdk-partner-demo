@@ -4,9 +4,9 @@ This project is based on the the newly released Adobe Experience Platform SDK fo
 
 ## Disclaimer
 
-This project is solely to be seen as a demo app of the v5 capabilities and accelerator and not a production ready implementation.
+This project is solely to be seen as a demo app of the AEP SDK capabilities and accelerator and not a production ready implementation.
 
-## SDK V5
+## AEP SDK
 
 In this demo app you will be using the [Adobe Experience Platform SDK for iOS or Android](https://aep-sdks.gitbook.io/docs/). The SDK will support more platforms to come like React Native.
 
@@ -23,18 +23,19 @@ The app does already include the latest version through [CocoaPods](https://coco
 Note that by default you should always use the library dependecies that your Launch environment configuration suggests you when clickig on **Install** under **Environments**.
 1. Gradle
 ```
-implementation 'com.adobe.marketing.mobile:analytics:1.+'
+implementation 'com.adobe.marketing.mobile:campaign:1.+'
 implementation 'com.adobe.marketing.mobile:target:1.+'
+implementation 'com.adobe.marketing.mobile:analytics:1.+'
 implementation 'com.adobe.marketing.mobile:userprofile:1.+'
 implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
 ```
 2. iOS
 ```
-pod 'ACPTarget', '~> 2.0'
-pod 'ACPAnalytics', '~> 2.0'
 pod 'ACPCampaign', '~> 1.0'
-pod 'ACPCore', '~> 2.0'
+pod 'ACPTarget', '~> 2.1'
+pod 'ACPAnalytics', '~> 2.0'
 pod 'ACPUserProfile', '~> 2.0'
+pod 'ACPCore', '~> 2.0'
 ```
 
 ## Requirements for Push and In-App messages
@@ -138,15 +139,6 @@ If you want to demo the JSON feed into the app without AEM, just host the *locat
 ## Contributing
 
 Please give me feedback on any section of this app - code, documentation, bugs, ...
-
-## Versioning
-
-Current version is 1.2
-
-## Roadmap
-
-- Add app to app store
-- Reflect full api coverage in the app
 
 ## Authors
 

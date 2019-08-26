@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //ACPTargetVEC.registerExtension()
         //ACPTargetVEC.allowDebugLogging(true)
         
-        ACPCampaign.registerExtension()
+        //ACPCampaign.registerExtension()
         ACPTarget.registerExtension()
         ACPAnalytics.registerExtension()
         ACPIdentity.registerExtension()
@@ -85,8 +85,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return launchConfig
         } else {
             /* launch prod */
-            return "launch-ENce85a04aef9e4f92b08bd774addd0b78"
-            //return "launch-EN09f8920cb46c4e6892b96e75160c1435-development"
+            return "launch-ENf08a9f5b947c412aaf2e16fe491d71cb"
         }
     }
     /**

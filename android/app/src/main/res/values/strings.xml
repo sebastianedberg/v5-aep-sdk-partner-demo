@@ -8,5 +8,7 @@
     <string name="button_login">ECID</string>
     <string name="state_message">State</string>
     <string name="action_message">Action</string>
-
+    <string name="msg_token_fmt">InstanceID Token: %s</string>
+    <string name="msg_ecid_fmt">ECID: %s</string>
+    <string name="fcm_token">FCM Token: %s</string>
 </resources>

@@ -8,7 +8,7 @@ target 'v5mobile' do
   # Pods for v5mobile
   #pod 'ACPTargetVEC', '~> 0.2'
     pod 'ACPCampaign', '~> 1.0'
-    pod 'ACPTarget', '~> 2.0'
+    pod 'ACPTarget', '~> 2.1'
     pod 'ACPAnalytics', '~> 2.0'
     pod 'ACPUserProfile', '~> 2.0'
     pod 'ACPCore', '~> 2.0'
